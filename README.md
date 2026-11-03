@@ -1,0 +1,2 @@
+# Fried_Chicken_Takeaway
+Automated website repository for Fried_Chicken_Takeaway
