@@ -1,0 +1,360 @@
+/* CRISPY CRAVE - Advanced Interactive Animations & Motion Styles
+   Unique animation signature for every single section across all pages
+*/
+
+/* 1. Base Transition Defaults */
+.anim-target {
+  will-change: transform, opacity;
+}
+
+/* ========================================================
+   SECTION-SPECIFIC UNIQUE ANIMATION STYLES
+======================================================== */
+
+/* STYLE 1: Fade Up with Depth Blur (Home 1 - Hero / Global Headings) */
+.anim-fade-up {
+  opacity: 0;
+  transform: translateY(35px);
+  filter: blur(4px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1), filter 0.8s ease;
+}
+.anim-fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+}
+
+/* STYLE 2: Horizontal Slide In Left & Right */
+.anim-slide-left {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1), transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.anim-slide-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.anim-slide-right {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1), transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.anim-slide-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* STYLE 3: Staggered Tilt & Scale Cards (Home 1 - Bestsellers) */
+.stagger-card {
+  opacity: 0;
+  transform: translateY(45px) scale(0.92) rotate(-1.5deg);
+  transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1), transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.stagger-card.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1) rotate(0deg);
+}
+
+/* STYLE 4: Bouncy Pop & Elastic Expand (Home 1 - Why Choose Us) */
+.pop-card {
+  opacity: 0;
+  transform: scale(0.7) translateY(20px);
+  transition: opacity 0.65s cubic-bezier(0.34, 1.56, 0.64, 1), transform 0.65s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.pop-card.visible {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+}
+
+/* STYLE 5: Clip-Path Venetian Blind Curtain Reveal (Home 1 - Signature Collections) */
+.clip-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1), transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.clip-reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* STYLE 6: 3D Flip Card X-Axis (Home 1 - Deals & Combos) */
+.anim-flip-x {
+  opacity: 0;
+  transform: perspective(1000px) rotateX(25deg) translateY(30px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.anim-flip-x.visible {
+  opacity: 1;
+  transform: perspective(1000px) rotateX(0deg) translateY(0);
+}
+
+/* STYLE 7: Zoom In Focal Impact (Home 1 - Section 7 / Offers S5 CTA) */
+.zoom-reveal {
+  opacity: 0;
+  transform: scale(0.88);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.zoom-reveal.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* STYLE 8: Diagonal Slash Reveal (Home 2 - Split Hero) */
+.anim-diagonal-slash {
+  opacity: 0;
+  transform: scale(0.95) translateY(25px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.anim-diagonal-slash.visible {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+}
+
+/* STYLE 9: Spiral Roll-In (Home 2 - Explore Categories) */
+.anim-roll-in {
+  opacity: 0;
+  transform: translateY(40px) rotate(-6deg) scale(0.94);
+  transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1), transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.anim-roll-in.visible {
+  opacity: 1;
+  transform: translateY(0) rotate(0deg) scale(1);
+}
+
+/* STYLE 10: Step Cascade Timeline (Home 2 - Secret Recipe Story) */
+.anim-step-cascade {
+  opacity: 0;
+  transform: translateX(-40px) scale(0.96);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.anim-step-cascade.visible {
+  opacity: 1;
+  transform: translateX(0) scale(1);
+}
+
+/* STYLE 11: 3D Skew Perspective (Home 2 - Most Loved Combos) */
+.anim-skew-card {
+  opacity: 0;
+  transform: perspective(900px) rotateY(-12deg) translateY(30px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.anim-skew-card.visible {
+  opacity: 1;
+  transform: perspective(900px) rotateY(0deg) translateY(0);
+}
+
+/* STYLE 12: Pulse Expansion (Home 2 - Food Experience) */
+.anim-pulse-box {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.65s ease, transform 0.65s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.anim-pulse-box.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* STYLE 13: Iris Circular Mask Zoom (Home 2 - Food Gallery) */
+.anim-iris-zoom {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.anim-iris-zoom.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* STYLE 14: Glow Curtain Fall (Home 2 - Order Favourite CTA) */
+.anim-curtain-fall {
+  opacity: 0;
+  transform: translateY(-50px) scale(0.95);
+  box-shadow: 0 0 0 rgba(255, 179, 0, 0);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 1s ease;
+}
+.anim-curtain-fall.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  box-shadow: 0 15px 40px rgba(198, 40, 40, 0.25);
+}
+
+/* STYLE 15: Ripple Wave Horizontal (Menu - Buckets) */
+.anim-ripple-wave {
+  opacity: 0;
+  transform: translateY(35px) skewY(2deg);
+  transition: opacity 0.75s ease, transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.anim-ripple-wave.visible {
+  opacity: 1;
+  transform: translateY(0) skewY(0deg);
+}
+
+/* STYLE 16: Slide Up with Color Border Flash (Menu - Wings & Strips) */
+.anim-border-flash {
+  opacity: 0;
+  transform: translateY(40px);
+  border-color: rgba(255, 179, 0, 0.8) !important;
+  transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1), transform 0.75s cubic-bezier(0.16, 1, 0.3, 1), border-color 1.2s ease;
+}
+.anim-border-flash.visible {
+  opacity: 1;
+  transform: translateY(0);
+  border-color: var(--border-light) !important;
+}
+
+/* STYLE 17: Side Swivel 3D (Menu - Burgers & Combos) */
+.anim-swivel-card {
+  opacity: 0;
+  transform: perspective(800px) rotateY(15deg) scale(0.95);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.anim-swivel-card.visible {
+  opacity: 1;
+  transform: perspective(800px) rotateY(0deg) scale(1);
+}
+
+/* STYLE 18: Float & Glide Stagger (Menu - Sides & Drinks) */
+.anim-glide-up {
+  opacity: 0;
+  transform: translateY(50px) scale(0.9);
+  transition: opacity 0.75s cubic-bezier(0.25, 1, 0.5, 1), transform 0.75s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.anim-glide-up.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* STYLE 19: Ticket Punch In (Offers - Today's Special Deals) */
+.anim-ticket-punch {
+  opacity: 0;
+  transform: scale(0.85) rotate(-3deg);
+  transition: opacity 0.65s cubic-bezier(0.34, 1.56, 0.64, 1), transform 0.65s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.anim-ticket-punch.visible {
+  opacity: 1;
+  transform: scale(1) rotate(0deg);
+}
+
+/* STYLE 20: Cinema Scope Expand (Offers - Family Deals) */
+.anim-cinema-expand {
+  clip-path: inset(15% 5% 15% 5% round 24px);
+  opacity: 0;
+  transition: clip-path 1.1s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.8s ease;
+}
+.anim-cinema-expand.visible {
+  clip-path: inset(0% 0% 0% 0% round 24px);
+  opacity: 1;
+}
+
+/* STYLE 21: Neon Jolt In (Offers - Weekend Specials) */
+.anim-neon-jolt {
+  opacity: 0;
+  transform: translateY(30px);
+  box-shadow: 0 0 20px rgba(255, 179, 0, 0.6);
+  transition: opacity 0.7s ease, transform 0.7s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 1s ease;
+}
+.anim-neon-jolt.visible {
+  opacity: 1;
+  transform: translateY(0);
+  box-shadow: var(--shadow-sm);
+}
+
+/* STYLE 22: Stamp Press In (About - Story & Founder) */
+.anim-stamp-press {
+  opacity: 0;
+  transform: scale(1.15) translateY(-20px);
+  transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.anim-stamp-press.visible {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+}
+
+/* STYLE 23: Shield Flip 3D (About - Quality Promise) */
+.anim-shield-flip {
+  opacity: 0;
+  transform: perspective(700px) rotateY(-25deg) translateY(20px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.anim-shield-flip.visible {
+  opacity: 1;
+  transform: perspective(700px) rotateY(0deg) translateY(0);
+}
+
+/* STYLE 24: Unfold Accordion Horizontal (About - What Makes Us Special) */
+.anim-unfold-row {
+  opacity: 0;
+  transform: translateX(-30px) rotateY(-10deg);
+  transition: opacity 0.75s ease, transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.anim-unfold-row.visible {
+  opacity: 1;
+  transform: translateX(0) rotateY(0deg);
+}
+
+/* STYLE 25: Badge Pop Hover (Contact - Info Cards) */
+.anim-contact-card {
+  opacity: 0;
+  transform: translateY(40px) scale(0.9);
+  transition: opacity 0.7s cubic-bezier(0.34, 1.56, 0.64, 1), transform 0.7s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.anim-contact-card.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* STYLE 26: Form Elevation Slide (Contact - Send Message Form) */
+.anim-form-elevate {
+  opacity: 0;
+  transform: translateY(45px) scale(0.97);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.04);
+  transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1), transform 0.9s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.9s ease;
+}
+.anim-form-elevate.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  box-shadow: var(--shadow-lg);
+}
+
+/* STYLE 27: Radar Scan In (Contact - Map Location) */
+.anim-radar-map {
+  opacity: 0;
+  transform: translateY(25px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.anim-radar-map.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* STYLE 28: Continuous Floating Element */
+.floating-element {
+  animation: floatSway 6s ease-in-out infinite alternate;
+}
+@keyframes floatSway {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-12px) rotate(3deg); }
+  100% { transform: translateY(8px) rotate(-3deg); }
+}
+
+/* Modern Diagonal Hero Mask */
+.diagonal-hero-img {
+  clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
+  border-radius: 24px;
+}
+@media (max-width: 991px) {
+  .diagonal-hero-img {
+    clip-path: none;
+  }
+}
+
+/* Accessibility: Respect Reduced Motion Preferences */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

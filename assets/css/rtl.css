@@ -1,0 +1,94 @@
+/* CRISPY CRAVE - RTL Mode Stylesheet */
+[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+[dir="rtl"] body {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+[dir="rtl"] .crave-dropdown-menu {
+  left: auto;
+  right: 0;
+}
+
+[dir="rtl"] .crave-dropdown-item:hover {
+  padding-left: 1rem;
+  padding-right: 1.25rem;
+}
+
+[dir="rtl"] .crave-mobile-drawer {
+  right: auto;
+  left: -100%;
+}
+
+[dir="rtl"] .crave-mobile-drawer.open {
+  left: 0;
+  right: auto;
+}
+
+[dir="rtl"] .crave-mobile-link.active,
+[dir="rtl"] .crave-mobile-link:hover {
+  padding-left: 0;
+  padding-right: 0.5rem;
+}
+
+[dir="rtl"] .product-tag {
+  left: auto;
+  right: 12px;
+}
+
+[dir="rtl"] .deal-discount-pill {
+  right: auto;
+  left: 16px;
+}
+
+[dir="rtl"] .floating-badge-top {
+  right: auto;
+  left: -10px;
+}
+
+[dir="rtl"] .floating-badge-bottom {
+  left: auto;
+  right: -20px;
+}
+
+[dir="rtl"] .review-quote-icon {
+  right: auto;
+  left: 2.5rem;
+}
+
+[dir="rtl"] .footer-col-title::after {
+  left: auto;
+  right: 0;
+}
+
+[dir="rtl"] .footer-links a:hover {
+  padding-left: 0;
+  padding-right: 0.35rem;
+}
+
+[dir="rtl"] .footer-newsletter-input {
+  padding-left: 3.5rem;
+  padding-right: 1.25rem;
+}
+
+[dir="rtl"] .footer-newsletter-btn {
+  right: auto;
+  left: 5px;
+  transform: rotate(180deg);
+}
+
+[dir="rtl"] .crave-toast {
+  right: auto;
+  left: 30px;
+  border-left: none;
+  border-right: 5px solid var(--secondary);
+}
+
+[dir="rtl"] .back-to-top {
+  right: auto;
+  left: 30px;
+}
+

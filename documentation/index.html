@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crispy Crave - Documentation & Developer Guide</title>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #C62828;
+      --secondary: #FFB300;
+      --bg: #F8F9FA;
+      --card: #FFFFFF;
+      --text: #1E293B;
+    }
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      margin: 0;
+      padding: 2rem 1.5rem;
+    }
+    .doc-container {
+      max-width: 960px;
+      margin: 0 auto;
+      background: var(--card);
+      padding: 3rem;
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    }
+    h1 { color: var(--primary); font-size: 2.2rem; margin-top: 0; }
+    h2 { border-bottom: 2px solid #E2E8F0; padding-bottom: 0.5rem; margin-top: 2rem; color: #0F172A; }
+    code { background: #F1F5F9; padding: 0.2rem 0.4rem; border-radius: 6px; font-size: 0.9em; }
+    pre { background: #0F172A; color: #F8FAFC; padding: 1.25rem; border-radius: 12px; overflow-x: auto; }
+    .badge { display: inline-block; padding: 0.35rem 0.75rem; border-radius: 999px; background: rgba(198,40,40,0.1); color: var(--primary); font-weight: 700; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="doc-container">
+    <span class="badge">ThemeForest Standard</span>
+    <h1>Crispy Crave - Template Documentation</h1>
+    <p>Welcome to the official documentation for the <strong>Crispy Crave</strong> Fried Chicken Takeaway & Delivery HTML5 template.</p>
+
+    <h2>1. Structure & Pages</h2>
+    <ul>
+      <li><code>index.html</code>: Home Page 1 featuring the classic hero, bestseller cards, stats, and 7 sections.</li>
+      <li><code>home-2.html</code>: Home Page 2 with split screen hero, category cards, secret recipe story, lightbox gallery, and 7 sections.</li>
+      <li><code>menu.html</code>: 5 dedicated food category sections with instant add-to-cart toasts.</li>
+      <li><code>offers.html</code>: 5 sections highlighting daily specials, family buckets, and weekend discounts.</li>
+      <li><code>about.html</code>: 5 sections detailing company history, quality promise, and brand values.</li>
+      <li><code>contact.html</code>: 5 sections including contact cards, validated contact form, interactive map, and takeaway CTA.</li>
+      <li><code>404.html</code>: Custom error page with recovery navigation.</li>
+      <li><code>coming-soon.html</code>: Teaser countdown page with newsletter sign-up.</li>
+    </ul>
+
+    <h2>2. Color Theme Customization</h2>
+    <p>All colors are centrally declared via CSS variables in <code>assets/css/style.css</code>:</p>
+    <pre><code>:root {
+  --primary: #C62828;      /* Brand Deep Red */
+  --secondary: #FFB300;    /* Golden Yellow */
+  --accent: #F57C00;       /* Warm Orange */
+  --bg-main: #FFF8EF;      /* Light Cream */
+  --text-main: #1D1D1F;
+}</code></pre>
+
+    <h2>3. Dark Mode & RTL Toggling</h2>
+    <p>Dark mode is toggled using the header button and applies the <code>[data-theme="dark"]</code> attribute to the <code>&lt;html&gt;</code> element. Preferences are automatically remembered across visits via <code>localStorage</code>.</p>
+    <p>RTL mode is toggled via the earth icon button, updating the <code>dir="rtl"</code> attribute and loading specific RTL mirror alignments from <code>assets/css/rtl.css</code>.</p>
+
+    <h2>4. Testing & Browser Support</h2>
+    <p>Tested and verified across all modern desktop and mobile browsers (Chrome, Firefox, Safari, Edge) from 360px viewport widths to 4K displays.</p>
+  </div>
+</body>
+</html>
+

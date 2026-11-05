@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crispy Crave | Menu - Crispy Buckets, Fiery Wings & Burgers</title>
+  <meta name="description"
+    content="Explore our full menu of crispy chicken buckets, Nashville hot wings, double-crunch chicken burgers, tenders, and loaded fries.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="assets/css/dark-mode.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+
+<body>
+
+  <!-- ================= HEADER / NAVBAR ================= -->
+  <!-- Topbar Announcement (Reference Marketplace Quality) -->
+  <div class="crave-topbar">
+    <div class="cc-container crave-topbar-inner">
+      <div class="topbar-promo">
+        <span class="topbar-promo-tag">Special Offer</span>
+        <span>🔥 Use Code <strong>CRAVE20</strong> for 20% off your takeaway order!</span>
+      </div>
+      <div class="topbar-perks">
+        <span><i class="fa-solid fa-stopwatch" style="color: var(--secondary);"></i> <strong>15-Min</strong> Express
+          Kitchen Guarantee</span>
+        <span><i class="fa-solid fa-phone" style="color: var(--secondary);"></i> <strong>Direct:</strong> +1 (555)
+          789-CRAVE</span>
+      </div>
+    </div>
+  </div>
+
+  <header class="crave-header">
+
+    <div class="cc-container crave-nav-wrapper">
+      <a href="index.html" class="crave-brand" aria-label="Crispy Crave Homepage">
+        <div class="crave-logo-mark"><i class="fa-solid fa-drumstick-bite"></i></div>
+        <div class="crave-brand-name">
+          <span class="crave-brand-main">CRISPY CRAVE</span>
+          <span class="crave-brand-sub">PREMIUM TAKEAWAY</span>
+        </div>
+      </a>
+
+      <nav aria-label="Primary Navigation">
+        <ul class="crave-nav-menu">
+          <li class="crave-nav-item">
+            <a href="index.html" class="crave-nav-link">Home <i class="fa-solid fa-chevron-down fa-xs"></i></a>
+            <ul class="crave-dropdown-menu">
+              <li><a href="index.html" class="crave-dropdown-item"><span>Home 1 (Classic Hero)</span></a></li>
+              <li><a href="home-2.html" class="crave-dropdown-item"><span>Home 2 (Split Hero)</span></a></li>
+            </ul>
+          </li>
+          <li class="crave-nav-item"><a href="menu.html" class="crave-nav-link active">Menu</a></li>
+          <li class="crave-nav-item"><a href="offers.html" class="crave-nav-link">Offers</a></li>
+          <li class="crave-nav-item"><a href="about.html" class="crave-nav-link">About Us</a></li>
+          <li class="crave-nav-item"><a href="contact.html" class="crave-nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="crave-nav-actions">
+        <!-- Wishlist Drawer Button -->
+        <button class="crave-icon-btn wish-drawer-btn" aria-label="Open Crave-List" title="Your Crave-List">
+          <i class="fa-regular fa-heart"></i>
+          <span class="crave-badge-count" data-wish-count>0</span>
+        </button>
+
+        <!-- Cart / Order Drawer Button -->
+        <button class="crave-icon-btn cart-drawer-btn" aria-label="Open Takeaway Bag" title="Your Takeaway Bag">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="crave-badge-count" data-cart-count>0</span>
+        </button>
+
+        <button class="crave-icon-btn theme-toggle-btn" aria-label="Toggle theme mode"><i
+            class="fa-solid fa-moon"></i></button>
+        <button class="crave-icon-btn rtl-toggle-btn" aria-label="Toggle text direction"><i
+            class="fa-solid fa-right-left"></i></button>
+        <a href="#buckets" class="btn-crave btn-crave-primary btn-crave-sm">
+          <i class="fa-solid fa-fire-burner"></i> Order Now
+        </a>
+        <button class="crave-hamburger" aria-label="Toggle navigation drawer">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="crave-mobile-overlay"></div>
+  <aside class="crave-mobile-drawer" aria-label="Mobile Navigation">
+    <div>
+      <div class="d-flex align-items-center justify-content-between mb-4">
+        <a href="index.html" class="crave-brand">
+          <div class="crave-logo-mark"><i class="fa-solid fa-drumstick-bite"></i></div>
+          <div class="crave-brand-name">
+            <span class="crave-brand-main">CRISPY CRAVE</span>
+            <span class="crave-brand-sub">PREMIUM TAKEAWAY</span>
+          </div>
+        </a>
+      </div>
+            <!-- Mobile Navigation Actions (Wishlist, Bag, Theme, RTL) -->
+      <div class="crave-mobile-actions mb-4">
+        <button class="crave-icon-btn wish-drawer-btn" aria-label="Open Crave-List" title="Your Crave-List">
+          <i class="fa-regular fa-heart"></i>
+          <span class="crave-badge-count" data-wish-count>0</span>
+        </button>
+        <button class="crave-icon-btn cart-drawer-btn" aria-label="Open Takeaway Bag" title="Your Takeaway Bag">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="crave-badge-count" data-cart-count>0</span>
+        </button>
+        <button class="crave-icon-btn theme-toggle-btn" aria-label="Switch between light and dark mode" title="Toggle Theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="crave-icon-btn rtl-toggle-btn" aria-label="Switch text direction RTL or LTR" title="Toggle RTL">
+          <i class="fa-solid fa-right-left"></i>
+        </button>
+      </div>
+      <ul class="crave-mobile-links">
+        <li class="crave-mobile-dropdown">
+          <button type="button" class="crave-mobile-link crave-mobile-dropdown-toggle" aria-expanded="false">
+            <span>Home</span>
+            <i class="fa-solid fa-chevron-down fa-xs mobile-chevron"></i>
+          </button>
+          <ul class="crave-mobile-sublinks">
+            <li><a href="index.html" class="crave-mobile-sublink"><i class="fa-solid fa-angles-right me-2" style="font-size:0.75rem; opacity:0.4;"></i>Home 1 (Classic Hero)</a></li>
+            <li><a href="home-2.html" class="crave-mobile-sublink"><i class="fa-solid fa-angles-right me-2" style="font-size:0.75rem; opacity:0.4;"></i>Home 2 (Split Hero)</a></li>
+          </ul>
+        </li>
+        <li><a href="menu.html" class="crave-mobile-link active">Menu</a></li>
+        <li><a href="offers.html" class="crave-mobile-link">Offers</a></li>
+        <li><a href="about.html" class="crave-mobile-link">About Us</a></li>
+        <li><a href="contact.html" class="crave-mobile-link">Contact</a></li>
+      </ul>
+    </div>
+    <div class="mt-4 pt-3 border-top">
+      <a href="#buckets" class="btn-crave btn-crave-primary w-100" style="display: flex;">
+        <i class="fa-solid fa-bag-shopping me-2"></i> Order Takeaway
+      </a>
+    </div>
+  </aside>
+
+  <!-- MAIN CONTENT: MENU (EXACTLY 5 SECTIONS) -->
+  <main>
+
+    <!-- ================= SECTION 1: MENU HERO ================= -->
+    <section class="inner-hero" id="menu-hero">
+      <div class="cc-container">
+        <div class="anim-fade-up">
+          <span class="crave-badge crave-badge-gold mb-3"><i class="fa-solid fa-utensils"></i> Freshly Fried To
+            Order</span>
+          <h1 class="inner-hero-title">EXPLORE OUR CRISPY MENU</h1>
+          <p style="max-width: 620px; margin: 0 auto 1.5rem; font-size: 1.1rem; color: var(--text-muted);">
+            Discover our legendary golden fried chicken buckets, signature bone-in cuts, fiery glazed wings, and loaded
+            smash burgers.
+          </p>
+          <div class="inner-hero-breadcrumbs">
+            <a href="index.html">Home</a>
+            <i class="fa-solid fa-chevron-right"></i>
+            <span>Food Menu</span>
+          </div>
+        </div>
+
+        <!-- Sticky-style Sub-navigation for Menu Sections -->
+        <div class="category-filter-nav mt-5">
+          <a href="#buckets" class="cat-filter-btn active">🍗 Chicken Buckets</a>
+          <a href="#wings-strips" class="cat-filter-btn">🔥 Wings & Strips</a>
+          <a href="#burgers-combos" class="cat-filter-btn">🍔 Burgers & Combos</a>
+          <a href="#sides-drinks" class="cat-filter-btn">🍟 Sides & Drinks</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SECTION 2: CHICKEN BUCKETS ================= -->
+    <section class="cc-section" id="buckets">
+      <div class="cc-container">
+        <div class="cc-section-header anim-fade-up">
+          <span class="crave-badge"><i class="fa-solid fa-drumstick-bite"></i> Shareable Feast</span>
+          <h2 class="cc-section-title">Signature Chicken Buckets</h2>
+          <p class="cc-section-subtitle">24-hour buttermilk soaked, hand-dredged in 11 secret herbs & spices, fried to
+            acoustic perfection.</p>
+        </div>
+
+        <div class="bestsellers-grid">
+          <!-- Bucket 1 -->
+          <div class="product-card anim-ripple-wave">
+            <div class="product-img-wrap">
+              <img src="https://images.pexels.com/photos/5474676/pexels-photo-5474676.jpeg" alt="Classic Crispy Bucket"
+                class="product-img" loading="lazy">
+              <span class="product-tag">Classic</span>
+            </div>
+            <div class="product-card-body">
+              <div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><span>(4.9)</span></div>
+              <h3 class="product-title">Classic Crispy Bucket (8 Pcs)</h3>
+              <p class="product-desc">4 golden drumsticks and 4 succulent thighs seasoned with our heirloom spiced crumb
+                coating.</p>
+              <div class="product-footer">
+                <span class="product-price">$21.99</span>
+                <button class="btn-crave btn-crave-primary btn-crave-sm btn-order-now"
+                  data-item="Classic Crispy Bucket (8 Pcs)"><i class="fa-solid fa-plus"></i> Add</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bucket 2 -->
+          <div class="product-card anim-ripple-wave">
+            <div class="product-img-wrap">
+              <img src="https://images.pexels.com/photos/12916901/pexels-photo-12916901.jpeg" alt="Spicy Chicken Bucket"
+                class="product-img" loading="lazy">
+              <span class="product-tag">Fiery Hot</span>
+            </div>
+            <div class="product-card-body">
+              <div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star-half-stroke"></i><span>(4.8)</span></div>
+              <h3 class="product-title">Spicy Inferno Bucket (8 Pcs)</h3>
+              <p class="product-desc">Dipped in red chili cayenne oil with a tongue-tingling ghost pepper and smoked
+                garlic kick.</p>
+              <div class="product-footer">
+                <span class="product-price">$23.50</span>
+                <button class="btn-crave btn-crave-primary btn-crave-sm btn-order-now"
+                  data-item="Spicy Inferno Bucket (8 Pcs)"><i class="fa-solid fa-plus"></i> Add</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bucket 3 -->
+          <div class="product-card anim-ripple-wave">
+            <div class="product-img-wrap">
+              <img src="https://images.pexels.com/photos/5652263/pexels-photo-5652263.jpeg" alt="Family Mega Bucket"
+                class="product-img" loading="lazy">
+              <span class="product-tag tag-gold">Family Deal</span>
+            </div>
+            <div class="product-card-body">
+              <div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><span>(5.0)</span></div>
+              <h3 class="product-title">Family Feast Bucket (14 Pcs)</h3>
+              <p class="product-desc">Assorted drumsticks, breasts, wings and thighs served with 2 large fries and sweet
+                coleslaw.</p>
+              <div class="product-footer">
+                <span class="product-price">$34.99</span>
+                <button class="btn-crave btn-crave-primary btn-crave-sm btn-order-now"
+                  data-item="Family Feast Bucket (14 Pcs)"><i class="fa-solid fa-plus"></i> Add</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bucket 4 -->
+          <div class="product-card anim-ripple-wave">
+            <div class="product-img-wrap">
+              <img src="https://images.pexels.com/photos/20313069/pexels-photo-20313069.jpeg"
+                alt="Party Extravaganza Bucket" class="product-img" loading="lazy">
+              <span class="product-tag">Mega Party</span>
+            </div>
+            <div class="product-card-body">
+              <div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><span>(4.9)</span></div>
+              <h3 class="product-title">Party Extravaganza (22 Pcs)</h3>
+              <p class="product-desc">The ultimate tailgating barrel! 22 pieces of mixed crunch chicken plus 6 artisan
+                dipping sauces.</p>
+              <div class="product-footer">
+                <span class="product-price">$49.99</span>
+                <button class="btn-crave btn-crave-primary btn-crave-sm btn-order-now"
+                  data-item="Party Extravaganza (22 Pcs)"><i class="fa-solid fa-plus"></i> Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SECTION 3: WINGS & STRIPS ================= -->
+    <section class="cc-section" id="wings-strips" style="background: var(--bg-card-alt);">
+      <div class="cc-container">
+        <div class="cc-section-header anim-fade-up">
+          <span class="crave-badge crave-badge-gold"><i class="fa-solid fa-fire"></i> Sizzling & Glazed</span>
+          <h2 class="cc-section-title">Wings & Hand-Breaded Strips</h2>
+          <p class="cc-section-subtitle">Tossed in chef-crafted glazes or seasoned with our signature dry rubs for bold
+            finger-licking flavor.</p>
+        </div>
+
+        <div class="layout-horizontal-strips">
+          <!-- Wings 1 (Horizontal Strip Left Image) -->
+          <div class="strip-product-card anim-border-flash">
+            <div class="strip-img-wrap">
+              <img src="https://images.unsplash.com/photo-1567620832903-9fc6debc209f?auto=format&fit=crop&w=800&q=80"
+                alt="Classic Crispy Wings" class="strip-img" loading="lazy">
+              <span class="product-tag">Crispy Classic</span>
+            </div>
+            <div class="strip-body">
+              <div class="product-rating mb-2"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><span>(4.9)</span></div>
+              <h3 class="product-title" style="font-size: 1.45rem;">Classic Golden Wings (10 Pcs)</h3>
+              <p class="product-desc">Uncut jumbo wings fried extra crunchy with fresh celery sticks and house-churned
+                buttermilk ranch dip.</p>
+              <div class="product-footer">
+                <span class="product-price">$13.99</span>
+                <button class="btn-crave btn-crave-primary btn-crave-sm btn-order-now"
+                  data-item="Classic Golden Wings (10 Pcs)"><i class="fa-solid fa-plus"></i> Add To Order</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Wings 2 (Horizontal Strip Right Image) -->
+          <div class="strip-product-card anim-border-flash">
+            <div class="strip-img-wrap">
+              <img src="https://images.pexels.com/photos/5695607/pexels-photo-5695607.jpeg"
+                alt="Nashville Hot Wings" class="strip-img" loading="lazy">
+              <span class="product-tag">Hot & Spicy</span>
+            </div>
+            <div class="strip-body">
+              <div class="product-rating mb-2"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star-half-stroke"></i><span>(4.8)</span></div>
+              <h3 class="product-title" style="font-size: 1.45rem;">Nashville Hot Cayenne Wings</h3>
+              <p class="product-desc">Drenched in fiery cayenne chili oil glaze, served with thick artisan crinkle
+                pickles and creamy blue cheese.</p>
+              <div class="product-footer">
+                <span class="product-price">$14.99</span>
+                <button class="btn-crave btn-crave-primary btn-crave-sm btn-order-now"
+                  data-item="Nashville Hot Cayenne Wings"><i class="fa-solid fa-plus"></i> Add To Order</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Wings 3 (Horizontal Strip Left Image) -->
+          <div class="strip-product-card anim-border-flash">
+            <div class="strip-img-wrap">
+              <img src="https://images.pexels.com/photos/30224598/pexels-photo-30224598.jpeg"
+                alt="Smoky Honey BBQ Wings" class="strip-img" loading="lazy">
+              <span class="product-tag tag-gold">Sweet & Smoky</span>
+            </div>
+            <div class="strip-body">
+              <div class="product-rating mb-2"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><span>(5.0)</span></div>
+              <h3 class="product-title" style="font-size: 1.45rem;">Smoky Honey BBQ Wings</h3>
+              <p class="product-desc">Glazed in slow-simmered hickory barbecue sauce with clover honey, molasses, and
+                toasted sesame seeds.</p>
+              <div class="product-footer">
+                <span class="product-price">$14.50</span>
+                <button class="btn-crave btn-crave-primary btn-crave-sm btn-order-now"
+                  data-item="Smoky Honey BBQ Wings"><i class="fa-solid fa-plus"></i> Add To Order</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Strips 4 (Horizontal Strip Right Image) -->
+          <div class="strip-product-card anim-border-flash">
+            <div class="strip-img-wrap">
+              <img src="https://images.pexels.com/photos/7963209/pexels-photo-7963209.jpeg"
+                alt="Crispy Chicken Breast Strips" class="strip-img" loading="lazy">
+              <span class="product-tag">100% Breast Meat</span>
+            </div>
+            <div class="strip-body">
+              <div class="product-rating mb-2"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><span>(4.9)</span></div>
+              <h3 class="product-title" style="font-size: 1.45rem;">Buttermilk Breast Tenders (6 Pcs)</h3>
+              <p class="product-desc">Whole natural chicken breast tenders with honey mustard and garlic roasted dipping
+                aioli.</p>
+              <div class="product-footer">
+                <span class="product-price">$11.99</span>
+                <button class="btn-crave btn-crave-primary btn-crave-sm btn-order-now"
+                  data-item="Buttermilk Breast Tenders (6 Pcs)"><i class="fa-solid fa-plus"></i> Add To Order</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SECTION 4: CHICKEN BURGERS & COMBOS ================= -->
+    <section class="cc-section" id="burgers-combos">
+      <div class="cc-container">
+        <div class="cc-section-header anim-fade-up">
+          <span class="crave-badge"><i class="fa-solid fa-burger"></i> Handheld Crunch</span>
+          <h2 class="cc-section-title">Chicken Burgers & Combos</h2>
+          <p class="cc-section-subtitle">Stacked high on toasted brioche buns with artisanal toppings, signature slaw,
+            and savory glazes.</p>
+        </div>
+
+        <div class="bestsellers-grid">
+          <!-- Burger 1 -->
+          <div class="product-card anim-swivel-card">
+            <div class="product-img-wrap">
+              <img src="https://images.pexels.com/photos/14332864/pexels-photo-14332864.jpeg"
+                alt="Classic Crunch Burger" class="product-img" loading="lazy">
+              <span class="product-tag">Classic</span>
+            </div>
+            <div class="product-card-body">
+              <h3 class="product-title">Crispy Crave Classic Burger</h3>
+              <p class="product-desc">Crispy fried chicken breast, sweet pickle chips, shredded iceberg, and secret
+                burger sauce.</p>
+              <div class="product-footer">
+                <span class="product-price">$9.99</span>
+                <button class="btn-crave btn-crave-primary btn-crave-sm btn-order-now"
+                  data-item="Crispy Crave Classic Burger"><i class="fa-solid fa-plus"></i> Add</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Burger 2 -->
+          <div class="product-card anim-swivel-card">
+            <div class="product-img-wrap">
+              <img src="https://images.pexels.com/photos/11519275/pexels-photo-11519275.jpeg"
+                alt="Nashville Spicy Burger" class="product-img" loading="lazy">
+              <span class="product-tag">Spicy Hot</span>
+            </div>
+            <div class="product-card-body">
+              <h3 class="product-title">Fiery Nashville Smash Burger</h3>
+              <p class="product-desc">Spicy marinated chicken thigh, pepperjack cheese, jalapeño slaw, and habanero
+                mayo.</p>
+              <div class="product-footer">
+                <span class="product-price">$11.49</span>
+                <button class="btn-crave btn-crave-primary btn-crave-sm btn-order-now"
+                  data-item="Fiery Nashville Smash Burger"><i class="fa-solid fa-plus"></i> Add</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Burger 3 -->
+          <div class="product-card anim-swivel-card">
+            <div class="product-img-wrap">
+              <img src="https://images.pexels.com/photos/33254635/pexels-photo-33254635.jpeg"
+                alt="Double Monster Burger" class="product-img" loading="lazy">
+              <span class="product-tag tag-gold">Double Meat</span>
+            </div>
+            <div class="product-card-body">
+              <h3 class="product-title">Monster Double Crunch Burger</h3>
+              <p class="product-desc">Two crispy chicken fillets, double cheddar slice, caramelized onions, and garlic
+                aioli.</p>
+              <div class="product-footer">
+                <span class="product-price">$13.99</span>
+                <button class="btn-crave btn-crave-primary btn-crave-sm btn-order-now"
+                  data-item="Monster Double Crunch Burger"><i class="fa-solid fa-plus"></i> Add</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Combo 4 -->
+          <div class="product-card anim-swivel-card">
+            <div class="product-img-wrap">
+              <img src="https://images.pexels.com/photos/19247579/pexels-photo-19247579.jpeg"
+                alt="Burger and Fries Combo Box" class="product-img" loading="lazy">
+              <span class="product-tag">Complete Box</span>
+            </div>
+            <div class="product-card-body">
+              <h3 class="product-title">Deluxe Burger & Fries Combo</h3>
+              <p class="product-desc">Your choice of burger, seasoned golden fries, 2 crispy wings, and a fountain
+                drink.</p>
+              <div class="product-footer">
+                <span class="product-price">$15.99</span>
+                <button class="btn-crave btn-crave-primary btn-crave-sm btn-order-now"
+                  data-item="Deluxe Burger & Fries Combo"><i class="fa-solid fa-plus"></i> Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SECTION 5: SIDES & DRINKS ================= -->
+    <section class="cc-section" id="sides-drinks" style="background: var(--bg-card-alt);">
+      <div class="cc-container">
+        <div class="cc-section-header anim-fade-up">
+          <span class="crave-badge crave-badge-gold"><i class="fa-solid fa-cookie"></i> Perfect Complements</span>
+          <h2 class="cc-section-title">Crunchy Sides & Refreshers</h2>
+          <p class="cc-section-subtitle">No fried chicken feast is complete without seasoned sides and ice-cold artisan
+            beverages.</p>
+        </div>
+
+        <div class="layout-side-tiles">
+          <!-- Side 1 (Circular Avatar Tile) -->
+          <div class="side-tile-card anim-glide-up">
+            <img src="https://images.pexels.com/photos/4432703/pexels-photo-4432703.jpeg"
+              alt="Crispy Cajun Seasoned Fries" class="side-tile-avatar" loading="lazy">
+            <span class="crave-badge mb-2">Crispy</span>
+            <h3 class="product-title" style="font-size: 1.25rem;">Cajun Seasoned Fries</h3>
+            <p class="product-desc" style="font-size: 0.88rem;">Crispy skin-on french fries tossed in our signature
+              herbal cajun spice mix.</p>
+            <div class="d-flex justify-content-between align-items-center w-100 pt-3 border-top mt-auto">
+              <span class="product-price">$4.50</span>
+              <button class="btn-crave btn-crave-primary btn-crave-sm btn-order-now" data-item="Cajun Seasoned Fries"><i
+                  class="fa-solid fa-plus"></i> Add</button>
+            </div>
+          </div>
+
+          <!-- Side 2 (Circular Avatar Tile) -->
+          <div class="side-tile-card anim-glide-up">
+            <img src="https://images.unsplash.com/photo-1585109649139-366815a0d713?auto=format&fit=crop&w=600&q=80"
+              alt="Loaded Cheese Bacon Fries" class="side-tile-avatar" loading="lazy">
+            <span class="crave-badge crave-badge-gold mb-2">Loaded</span>
+            <h3 class="product-title" style="font-size: 1.25rem;">Loaded Cheddar Fries</h3>
+            <p class="product-desc" style="font-size: 0.88rem;">Piping hot fries smothered in aged cheddar cheese sauce
+              and bacon bits.</p>
+            <div class="d-flex justify-content-between align-items-center w-100 pt-3 border-top mt-auto">
+              <span class="product-price">$6.99</span>
+              <button class="btn-crave btn-crave-primary btn-crave-sm btn-order-now" data-item="Loaded Cheddar Fries"><i
+                  class="fa-solid fa-plus"></i> Add</button>
+            </div>
+          </div>
+
+          <!-- Side 3 (Circular Avatar Tile) -->
+          <div class="side-tile-card anim-glide-up">
+            <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80"
+              alt="Creamy Southern Coleslaw" class="side-tile-avatar" loading="lazy">
+            <span class="crave-badge crave-badge-gold mb-2">Fresh Daily</span>
+            <h3 class="product-title" style="font-size: 1.25rem;">Southern Creamy Slaw</h3>
+            <p class="product-desc" style="font-size: 0.88rem;">Shredded green cabbage and sweet carrots in a tangy
+              sweet dressing.</p>
+            <div class="d-flex justify-content-between align-items-center w-100 pt-3 border-top mt-auto">
+              <span class="product-price">$3.99</span>
+              <button class="btn-crave btn-crave-primary btn-crave-sm btn-order-now" data-item="Southern Creamy Slaw"><i
+                  class="fa-solid fa-plus"></i> Add</button>
+            </div>
+          </div>
+
+          <!-- Side 4 (Circular Avatar Tile) -->
+          <div class="side-tile-card anim-glide-up">
+            <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=600&q=80"
+              alt="Ice Cold Fountain Drinks" class="side-tile-avatar" loading="lazy">
+            <span class="crave-badge mb-2">Ice Chilled</span>
+            <h3 class="product-title" style="font-size: 1.25rem;">Craft Sodas & Tea</h3>
+            <p class="product-desc" style="font-size: 0.88rem;">Freshly poured fountain sodas, peach iced tea, and
+              strawberry lemonades.</p>
+            <div class="d-flex justify-content-between align-items-center w-100 pt-3 border-top mt-auto">
+              <span class="product-price">$2.99</span>
+              <button class="btn-crave btn-crave-primary btn-crave-sm btn-order-now" data-item="Craft Sodas & Tea"><i
+                  class="fa-solid fa-plus"></i> Add</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Final Menu Call To Action Box -->
+        <!-- Final Menu Call To Action Card -->
+        <div class="menu-order-card anim-fade-up">
+          <h3 class="menu-order-card-title">Ready to place your takeaway order?</h3>
+          <p class="menu-order-card-desc">Freshly fried batches prepared the moment you order. Fast pickup or express takeaway ready in under 15 minutes.</p>
+          <a href="contact.html" class="btn-crave btn-crave-primary btn-crave-lg">
+            <i class="fa-solid fa-bag-shopping"></i> Complete Takeaway Order
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="crave-footer">
+    <div class="cc-container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="crave-brand mb-3">
+            <div class="crave-logo-mark"><i class="fa-solid fa-drumstick-bite"></i></div>
+            <div class="crave-brand-name">
+              <span class="crave-brand-main">CRISPY CRAVE</span>
+              <span class="crave-brand-sub" style="color: var(--secondary);">PREMIUM TAKEAWAY</span>
+            </div>
+          </a>
+          <p class="footer-brand-desc">Artisanal double-dipped fried chicken handcrafted with farm-fresh poultry,
+            proprietary botanical spices, and unmatched crunchy passion.</p>
+          <div class="footer-socials">
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="footer-social-link"
+              aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener" class="footer-social-link"
+              aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://tiktok.com" target="_blank" rel="noopener" class="footer-social-link"
+              aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener" class="footer-social-link"
+              aria-label="X Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fa-solid fa-angle-right fa-xs"></i> Home 1 (Classic)</a></li>
+            <li><a href="home-2.html"><i class="fa-solid fa-angle-right fa-xs"></i> Home 2 (Split Hero)</a></li>
+            <li><a href="menu.html"><i class="fa-solid fa-angle-right fa-xs"></i> Full Food Menu</a></li>
+            <li><a href="offers.html"><i class="fa-solid fa-angle-right fa-xs"></i> Special Deals & Combos</a></li>
+            <li><a href="about.html"><i class="fa-solid fa-angle-right fa-xs"></i> Our Kitchen Story</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-angle-right fa-xs"></i> Contact & Locations</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Takeaway Hours</h4>
+          <div class="footer-contact-item">
+            <i class="fa-regular fa-clock"></i>
+            <div><strong class="footer-contact-label">Mon – Fri:</strong><br>10:30 AM – 11:00 PM</div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-regular fa-clock"></i>
+            <div><strong class="footer-contact-label">Sat – Sun:</strong><br>11:00 AM – 12:30 AM</div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>742 Evergreen Crunch Avenue,<br>Metro Foodie District</div>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Secret Crave Club</h4>
+          <p class="footer-newsletter-text">Subscribe to receive secret weekend discount codes, new menu
+            tastings, and free wing drops.</p>
+          <form class="footer-newsletter-form">
+            <input type="email" class="footer-newsletter-input" placeholder="Your email address..." required
+              aria-label="Email for newsletter">
+            <button type="submit" class="footer-newsletter-btn" aria-label="Subscribe to newsletter"><i
+                class="fa-solid fa-paper-plane"></i></button>
+          </form>
+          <small class="d-block mt-2" class="footer-spam-note">Zero spam. Unsubscribe at any
+            time.</small>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 <strong>Crispy Crave Takeaway</strong>. All Rights Reserved. Crafted with bold culinary
+          passion.</div>
+        <div class="d-flex align-items-center gap-3">
+          <a href="about.html" class="footer-bottom-link">Privacy Policy</a>
+          <a href="about.html" class="footer-bottom-link">Terms of Service</a>
+          <a href="contact.html" class="footer-bottom-link">Store Locator</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top" title="Scroll to top"><i
+      class="fa-solid fa-arrow-up"></i></button>
+
+  <!-- Drawer Backdrop Overlay -->
+  <div class="crave-drawer-overlay"></div>
+
+  <!-- ================= ORDER BAG SLIDE-OVER DRAWER ================= -->
+  <aside class="crave-slide-drawer" id="orderDrawer" aria-label="Takeaway Order Bag">
+    <div class="crave-drawer-header">
+      <h3 class="crave-drawer-title">
+        <i class="fa-solid fa-bag-shopping" style="color: var(--primary);"></i> Your Takeaway Bag
+      </h3>
+      <button class="crave-drawer-close" id="orderDrawerClose" aria-label="Close Bag">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <!-- Perks Progress Bar -->
+    <div class="crave-perks-box">
+      <div class="crave-perks-msg" id="orderPerksMsg">
+        🔥 Add <strong>$35.00</strong> more to unlock Free Cheesy Dip!
+      </div>
+      <div class="crave-perks-progress-track">
+        <div class="crave-perks-progress-fill" id="orderPerksFill"></div>
+      </div>
+    </div>
+
+    <!-- Drawer Body -->
+    <div class="crave-drawer-body">
+      <!-- Empty State -->
+      <div class="crave-drawer-empty" id="orderDrawerEmpty" style="display: none;">
+        <div class="crave-drawer-empty-icon"><i class="fa-solid fa-drumstick-bite"></i></div>
+        <h4 style="font-weight: 800; margin: 0;">Your bag is empty!</h4>
+        <p class="text-muted" style="font-size: 0.9rem; margin: 0;">Add delicious golden crispy chicken from our menu to
+          start your order.</p>
+        <a href="menu.html" class="btn-crave btn-crave-primary btn-crave-sm mt-2">Explore Menu</a>
+      </div>
+
+      <!-- Live Cart Items List -->
+      <div id="orderDrawerItems" class="d-flex flex-column gap-2"></div>
+    </div>
+
+    <!-- Drawer Footer -->
+    <div class="crave-drawer-footer" id="orderDrawerFooter">
+      <!-- Coupon Form -->
+      <form class="crave-coupon-wrap" id="couponForm">
+        <input type="text" id="couponInput" class="crave-coupon-input" placeholder="Promo code (CRAVE20)..."
+          aria-label="Enter coupon code">
+        <button type="submit" class="btn-crave btn-crave-gold btn-crave-sm"
+          style="padding: 0.4rem 0.9rem; font-size: 0.78rem;">Apply</button>
+      </form>
+
+      <!-- Bill Breakdown -->
+      <div class="d-flex flex-column gap-1">
+        <div class="crave-bill-row">
+          <span>Subtotal</span>
+          <span id="billSubtotal">$0.00</span>
+        </div>
+        <div class="crave-bill-row" id="billDiscountRow" style="display: none; color: var(--secondary);">
+          <span>Promo Discount</span>
+          <span id="billDiscount">-$0.00</span>
+        </div>
+        <div class="crave-bill-row">
+          <span>Estimated Tax (8%)</span>
+          <span id="billTax">$0.00</span>
+        </div>
+        <div class="crave-bill-row total">
+          <span>Total</span>
+          <span class="price" id="billTotal">$0.00</span>
+        </div>
+      </div>
+
+      <!-- Checkout CTA -->
+      <button class="btn-crave btn-crave-primary w-100" id="orderCheckoutBtn"
+        style="padding: 0.85rem; font-size: 1rem;">
+        <i class="fa-solid fa-fire-burner me-2"></i> Proceed to Takeaway Pickup
+      </button>
+    </div>
+  </aside>
+
+  <!-- ================= WISHLIST / CRAVE-LIST SLIDE-OVER DRAWER ================= -->
+  <aside class="crave-slide-drawer" id="wishlistDrawer" aria-label="Crave-List Favorites">
+    <div class="crave-drawer-header">
+      <h3 class="crave-drawer-title">
+        <i class="fa-solid fa-heart" style="color: var(--primary);"></i> Your Crave-List
+      </h3>
+      <button class="crave-drawer-close" id="wishlistDrawerClose" aria-label="Close Crave-List">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <div class="crave-drawer-body">
+      <!-- Empty State -->
+      <div class="crave-drawer-empty" id="wishlistDrawerEmpty" style="display: none;">
+        <div class="crave-drawer-empty-icon"><i class="fa-regular fa-heart"></i></div>
+        <h4 style="font-weight: 800; margin: 0;">Nothing saved yet</h4>
+        <p class="text-muted" style="font-size: 0.9rem; margin: 0;">Tap the heart icon on any food item to save your
+          cravings for later.</p>
+        <a href="menu.html" class="btn-crave btn-crave-primary btn-crave-sm mt-2">Browse Favorites</a>
+      </div>
+
+      <!-- Wishlist Items List -->
+      <div id="wishlistDrawerItems" class="d-flex flex-column gap-2"></div>
+    </div>
+
+    <div class="crave-drawer-footer">
+      <button class="btn-crave btn-crave-primary w-100" id="wishlistMoveAll">
+        <i class="fa-solid fa-bag-shopping me-2"></i> Move All to Bag
+      </button>
+    </div>
+  </aside>
+
+  <!-- ================= FOOD QUICK-VIEW MODAL ================= -->
+  <div class="crave-qv-modal" id="quickViewModal" role="dialog" aria-modal="true" aria-label="Food Details">
+    <div class="crave-qv-dialog">
+      <button class="crave-qv-close" id="quickViewClose" aria-label="Close dialog"><i
+          class="fa-solid fa-xmark"></i></button>
+      <div class="crave-qv-img-wrap">
+        <img id="qvImage" src="" alt="Crispy Food Preview" class="crave-qv-img">
+      </div>
+      <div class="crave-qv-content">
+        <div class="d-flex align-items-center justify-content-between">
+          <span class="crave-badge crave-badge-gold"><i class="fa-solid fa-fire"></i> Signature Recipe</span>
+          <span id="qvPrice" class="product-price" style="font-size: 1.45rem;">$12.99</span>
+        </div>
+        <h3 id="qvTitle" style="font-size: 1.5rem; font-weight: 800; margin: 0;">Crispy Master Selection</h3>
+        <p id="qvDesc" class="text-muted" style="font-size: 0.92rem; line-height: 1.5; margin: 0;">
+          Dipped in spiced buttermilk batter and pressure-fried to seal in maximum moisture with acoustic shatter
+          crunch.
+        </p>
+
+        <!-- Dietary Highlights -->
+        <div class="d-flex gap-2 flex-wrap" style="font-size: 0.78rem; font-weight: 700;">
+          <span class="crave-badge"><i class="fa-solid fa-shield-halved"></i> 100% Halal Poultry</span>
+          <span class="crave-badge"><i class="fa-solid fa-wheat-awn"></i> Zero Trans Fat</span>
+        </div>
+
+        <!-- Dip Selector -->
+        <div>
+          <label style="font-size: 0.85rem; font-weight: 800; display: block; margin-bottom: 0.4rem;">Choose Dipping
+            Sauce:</label>
+          <div class="crave-qv-sauces">
+            <span class="crave-sauce-pill active">Garlic Herb Aioli</span>
+            <span class="crave-sauce-pill">Hot Honey Glaze</span>
+            <span class="crave-sauce-pill">Smoky BBQ</span>
+            <span class="crave-sauce-pill">Creamy Ranch</span>
+          </div>
+        </div>
+
+        <!-- Quantity & Add to Cart -->
+        <div class="d-flex align-items-center gap-3 pt-2">
+          <div class="drawer-qty-stepper" style="padding: 0.2rem 0.5rem;">
+            <input type="number" id="qvQty" value="1" min="1" max="20"
+              style="width: 50px; border: none; background: transparent; text-align: center; font-weight: 800; color: var(--text-main);"
+              aria-label="Quantity">
+          </div>
+          <button class="btn-crave btn-crave-primary flex-grow-1" id="qvAddToCart">
+            <i class="fa-solid fa-plus me-1"></i> Add To Bag
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

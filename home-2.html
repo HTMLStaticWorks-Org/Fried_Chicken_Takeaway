@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crispy Crave | Home 2 - Modern Split Food Concept</title>
+  <meta name="description"
+    content="Discover our secret crispy recipe, artisan category menus, and chef-curated takeaway combinations at Crispy Crave.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="assets/css/dark-mode.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+
+<body>
+
+  <!-- ================= HEADER / NAVBAR ================= -->
+  <!-- Topbar Announcement (Reference Marketplace Quality) -->
+    <div class="crave-topbar">
+      <div class="cc-container crave-topbar-inner">
+        <div class="topbar-promo">
+          <span class="topbar-promo-tag">Special Offer</span>
+          <span>🔥 Use Code <strong>CRAVE20</strong> for 20% off your takeaway order!</span>
+        </div>
+        <div class="topbar-perks">
+          <span><i class="fa-solid fa-stopwatch" style="color: var(--secondary);"></i> <strong>15-Min</strong> Express
+            Kitchen Guarantee</span>
+          <span><i class="fa-solid fa-phone" style="color: var(--secondary);"></i> <strong>Direct:</strong> +1 (555)
+            789-CRAVE</span>
+        </div>
+      </div>
+    </div>
+
+  <header class="crave-header">
+
+    <div class="cc-container crave-nav-wrapper">
+      <a href="index.html" class="crave-brand" aria-label="Crispy Crave Homepage">
+        <div class="crave-logo-mark"><i class="fa-solid fa-drumstick-bite"></i></div>
+        <div class="crave-brand-name">
+          <span class="crave-brand-main">CRISPY CRAVE</span>
+          <span class="crave-brand-sub">PREMIUM TAKEAWAY</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav aria-label="Primary Navigation">
+        <ul class="crave-nav-menu">
+          <li class="crave-nav-item">
+            <a href="home-2.html" class="crave-nav-link active">Home <i class="fa-solid fa-chevron-down fa-xs"></i></a>
+            <ul class="crave-dropdown-menu">
+              <li><a href="index.html" class="crave-dropdown-item"><span>Home 1 (Classic Hero)</span></a></li>
+              <li><a href="home-2.html" class="crave-dropdown-item"><span>Home 2 (Split Hero)</span><span
+                    class="crave-dropdown-badge">Active</span></a></li>
+            </ul>
+          </li>
+          <li class="crave-nav-item"><a href="menu.html" class="crave-nav-link">Menu</a></li>
+          <li class="crave-nav-item"><a href="offers.html" class="crave-nav-link">Offers</a></li>
+          <li class="crave-nav-item"><a href="about.html" class="crave-nav-link">About Us</a></li>
+          <li class="crave-nav-item"><a href="contact.html" class="crave-nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Controls -->
+      <div class="crave-nav-actions">
+        <!-- Wishlist Drawer Button -->
+        <button class="crave-icon-btn wish-drawer-btn" aria-label="Open Crave-List" title="Your Crave-List">
+          <i class="fa-regular fa-heart"></i>
+          <span class="crave-badge-count" data-wish-count>0</span>
+        </button>
+
+        <!-- Cart / Order Drawer Button -->
+        <button class="crave-icon-btn cart-drawer-btn" aria-label="Open Takeaway Bag" title="Your Takeaway Bag">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="crave-badge-count" data-cart-count>0</span>
+        </button>
+
+        <button class="crave-icon-btn theme-toggle-btn" aria-label="Toggle theme mode"><i
+            class="fa-solid fa-moon"></i></button>
+        <button class="crave-icon-btn rtl-toggle-btn" aria-label="Toggle text direction"><i
+            class="fa-solid fa-right-left"></i></button>
+        <a href="menu.html" class="btn-crave btn-crave-primary btn-crave-sm">
+          <i class="fa-solid fa-fire-burner"></i> Order Now
+        </a>
+        <button class="crave-hamburger" aria-label="Toggle navigation drawer">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Overlay & Drawer -->
+  <div class="crave-mobile-overlay"></div>
+  <aside class="crave-mobile-drawer" aria-label="Mobile Navigation">
+    <div>
+      <div class="d-flex align-items-center justify-content-between mb-4">
+        <a href="index.html" class="crave-brand">
+          <div class="crave-logo-mark"><i class="fa-solid fa-drumstick-bite"></i></div>
+          <div class="crave-brand-name">
+            <span class="crave-brand-main">CRISPY CRAVE</span>
+            <span class="crave-brand-sub">PREMIUM TAKEAWAY</span>
+          </div>
+        </a>
+      </div>
+            <!-- Mobile Navigation Actions (Wishlist, Bag, Theme, RTL) -->
+      <div class="crave-mobile-actions mb-4">
+        <button class="crave-icon-btn wish-drawer-btn" aria-label="Open Crave-List" title="Your Crave-List">
+          <i class="fa-regular fa-heart"></i>
+          <span class="crave-badge-count" data-wish-count>0</span>
+        </button>
+        <button class="crave-icon-btn cart-drawer-btn" aria-label="Open Takeaway Bag" title="Your Takeaway Bag">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="crave-badge-count" data-cart-count>0</span>
+        </button>
+        <button class="crave-icon-btn theme-toggle-btn" aria-label="Switch between light and dark mode" title="Toggle Theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="crave-icon-btn rtl-toggle-btn" aria-label="Switch text direction RTL or LTR" title="Toggle RTL">
+          <i class="fa-solid fa-right-left"></i>
+        </button>
+      </div>
+      <ul class="crave-mobile-links">
+        <li class="crave-mobile-dropdown">
+          <button type="button" class="crave-mobile-link crave-mobile-dropdown-toggle active open" aria-expanded="true">
+            <span>Home</span>
+            <i class="fa-solid fa-chevron-down fa-xs mobile-chevron"></i>
+          </button>
+          <ul class="crave-mobile-sublinks show">
+            <li><a href="index.html" class="crave-mobile-sublink"><i class="fa-solid fa-angles-right me-2" style="font-size:0.75rem; opacity:0.4;"></i>Home 1 (Classic Hero)</a></li>
+            <li><a href="home-2.html" class="crave-mobile-sublink active"><i class="fa-solid fa-angles-right me-2" style="font-size:0.75rem; color:var(--primary);"></i>Home 2 (Split Hero)</a></li>
+          </ul>
+        </li>
+        <li><a href="menu.html" class="crave-mobile-link">Menu</a></li>
+        <li><a href="offers.html" class="crave-mobile-link">Offers</a></li>
+        <li><a href="about.html" class="crave-mobile-link">About Us</a></li>
+        <li><a href="contact.html" class="crave-mobile-link">Contact</a></li>
+      </ul>
+    </div>
+    <div class="mt-4 pt-3 border-top">
+      <a href="menu.html" class="btn-crave btn-crave-primary w-100" style="display: flex;">
+        <i class="fa-solid fa-bag-shopping me-2"></i> Order Takeaway
+      </a>
+    </div>
+  </aside>
+
+  <!-- ================= MAIN CONTENT: HOME 2 (EXACTLY 7 SECTIONS) ================= -->
+  <main>
+
+    <!-- ================= SECTION 1: CREATIVE SPLIT HERO ================= -->
+    <section class="cc-section hero-split" id="hero-split">
+      <div class="cc-container">
+        <div class="hero-split-grid">
+          <!-- Left Column: Bold Typography -->
+          <div class="anim-slide-left">
+            <div class="crave-badge crave-badge-gold mb-3">
+              <i class="fa-solid fa-sparkles"></i> The Modern Crunchy Revolution
+            </div>
+            <h1
+              style="font-size: clamp(2.8rem, 5.2vw, 4.3rem); font-weight: 900; line-height: 1.05; letter-spacing: -0.03em; margin-bottom: 1.5rem;">
+              TASTE THE ART OF <span style="color: var(--primary);">EXTRA CRUNCH!</span>
+            </h1>
+            <p
+              style="font-size: 1.15rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 2rem; max-width: 520px;">
+              Engineered for genuine fried chicken enthusiasts. Crisp, golden, spiced batter coating ultra-succulent
+              chicken that crackles with intensity at every bite.
+            </p>
+            <div class="d-flex align-items-center gap-3 flex-wrap">
+              <a href="menu.html" class="btn-crave btn-crave-primary btn-crave-lg">
+                <i class="fa-solid fa-bag-shopping"></i> Order Online Now
+              </a>
+              <a href="#secret-recipe" class="btn-crave btn-crave-outline btn-crave-lg">
+                <i class="fa-solid fa-book-open"></i> The Secret Recipe
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Large Diagonal Reveal Chicken Bucket -->
+          <div class="anim-diagonal-slash text-center position-relative">
+            <img
+              src="https://images.pexels.com/photos/13795425/pexels-photo-13795425.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              alt="Grand Crispy Fried Chicken Feast" class="diagonal-hero-img shadow-lg"
+              style="width: 100%; max-height: 480px; object-fit: cover; border: 4px solid var(--primary);">
+            <div class="crave-badge crave-badge-glow position-absolute"
+              style="bottom: 25px; left: 25px; background: #FFF; color: #171717; padding: 0.8rem 1.4rem; font-size: 0.95rem;">
+              <i class="fa-solid fa-bolt text-warning"></i> 100% Double-Dipped Crunch
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SECTION 2: EXPLORE OUR MENU (CATEGORY SHOWCASE) ================= -->
+    <section class="cc-section" id="explore-categories">
+      <div class="cc-container">
+        <div class="cc-section-header anim-fade-up">
+          <span class="crave-badge"><i class="fa-solid fa-shapes"></i> Fresh Selections</span>
+          <h2 class="cc-section-title">Explore Our Menu</h2>
+          <p class="cc-section-subtitle">Dive into our specialized culinary categories prepared with artisanal precision
+            and speed.</p>
+        </div>
+
+        <!-- 5 Distinct Category Cards Grid -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1.5rem;">
+          <!-- Category 1 -->
+          <a href="menu.html" class="anim-roll-in"
+            style="display: block; background: var(--bg-card); border-radius: 20px; overflow: hidden; border: 1px solid var(--border-light); text-align: center; box-shadow: var(--shadow-sm); transition: transform 0.3s ease;">
+            <div style="height: 180px; overflow: hidden;">
+              <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=500&q=80"
+                alt="Crispy Buckets"
+                style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+            </div>
+            <div style="padding: 1.25rem 1rem;">
+              <h3 style="font-size: 1.2rem; font-weight: 800; margin-bottom: 0.25rem;">Chicken Buckets</h3>
+              <span style="font-size: 0.82rem; font-weight: 700; color: var(--primary);">6 Varieties &rarr;</span>
+            </div>
+          </a>
+
+          <!-- Category 2 -->
+          <a href="menu.html" class="anim-roll-in"
+            style="display: block; background: var(--bg-card); border-radius: 20px; overflow: hidden; border: 1px solid var(--border-light); text-align: center; box-shadow: var(--shadow-sm); transition: transform 0.3s ease;">
+            <div style="height: 180px; overflow: hidden;">
+              <img src="https://images.pexels.com/photos/5695607/pexels-photo-5695607.jpeg" alt="Spicy Wings"
+                style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+            </div>
+            <div style="padding: 1.25rem 1rem;">
+              <h3 style="font-size: 1.2rem; font-weight: 800; margin-bottom: 0.25rem;">Fiery Wings</h3>
+              <span style="font-size: 0.82rem; font-weight: 700; color: var(--primary);">5 Sauces &rarr;</span>
+            </div>
+          </a>
+
+          <!-- Category 3 -->
+          <a href="menu.html" class="anim-roll-in"
+            style="display: block; background: var(--bg-card); border-radius: 20px; overflow: hidden; border: 1px solid var(--border-light); text-align: center; box-shadow: var(--shadow-sm); transition: transform 0.3s ease;">
+            <div style="height: 180px; overflow: hidden;">
+              <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=500&q=80"
+                alt="Crispy Burgers"
+                style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+            </div>
+            <div style="padding: 1.25rem 1rem;">
+              <h3 style="font-size: 1.2rem; font-weight: 800; margin-bottom: 0.25rem;">Crunch Burgers</h3>
+              <span style="font-size: 0.82rem; font-weight: 700; color: var(--primary);">Brioche Buns &rarr;</span>
+            </div>
+          </a>
+
+          <!-- Category 4 -->
+          <a href="menu.html" class="anim-roll-in"
+            style="display: block; background: var(--bg-card); border-radius: 20px; overflow: hidden; border: 1px solid var(--border-light); text-align: center; box-shadow: var(--shadow-sm); transition: transform 0.3s ease;">
+            <div style="height: 180px; overflow: hidden;">
+              <img src="https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=500&q=80"
+                alt="Tender Strips"
+                style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+            </div>
+            <div style="padding: 1.25rem 1rem;">
+              <h3 style="font-size: 1.2rem; font-weight: 800; margin-bottom: 0.25rem;">Tender Strips</h3>
+              <span style="font-size: 0.82rem; font-weight: 700; color: var(--primary);">100% Breast Meat &rarr;</span>
+            </div>
+          </a>
+
+          <!-- Category 5 -->
+          <a href="menu.html" class="anim-roll-in"
+            style="display: block; background: var(--bg-card); border-radius: 20px; overflow: hidden; border: 1px solid var(--border-light); text-align: center; box-shadow: var(--shadow-sm); transition: transform 0.3s ease;">
+            <div style="height: 180px; overflow: hidden;">
+              <img src="https://images.pexels.com/photos/33101863/pexels-photo-33101863.jpeg" alt="Sides & Sauces"
+                style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+            </div>
+            <div style="padding: 1.25rem 1rem;">
+              <h3 style="font-size: 1.2rem; font-weight: 800; margin-bottom: 0.25rem;">Loaded Sides</h3>
+              <span style="font-size: 0.82rem; font-weight: 700; color: var(--primary);">Fries, Slaw & Dips
+                &rarr;</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SECTION 3: OUR SECRET CRISPY RECIPE ================= -->
+    <section class="cc-section" id="secret-recipe" style="background: var(--bg-card-alt);">
+      <div class="cc-container">
+        <div class="cc-section-header anim-fade-up">
+          <span class="crave-badge crave-badge-gold mb-2"><i class="fa-solid fa-mortar-pestle"></i> Culinary
+            Craftsmanship</span>
+          <h2 class="cc-section-title">Our Secret 3-Step Crispy Process</h2>
+          <p class="cc-section-subtitle">A sequential preparation ritual engineered over 3 years to seal natural poultry
+            juices while maximizing crust acoustics.</p>
+        </div>
+
+        <div class="layout-horizontal-stepper">
+          <!-- Step 1 -->
+          <div class="step-flow-card anim-step-cascade">
+            <div class="step-number-pill" style="background: var(--primary);">01</div>
+            <span class="crave-badge mb-2">Stage One</span>
+            <h3 style="font-size: 1.35rem; font-weight: 800; margin-bottom: 0.75rem;">24-Hour Cultured<br>Buttermilk Bath</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">Real probiotic buttermilk
+              combined with mineral sea salt and bay leaves tenderizes the poultry fiber all the way into the bone
+              center.</p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="step-flow-card anim-step-cascade">
+            <div class="step-number-pill" style="background: var(--secondary); color: #171717;">02</div>
+            <span class="crave-badge crave-badge-gold mb-2">Stage Two</span>
+            <h3 style="font-size: 1.35rem; font-weight: 800; margin-bottom: 0.75rem;">Double Dredge<br>Spiced Flour Crumb</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">High-protein flour blended with
+              Spanish smoked paprika, cracked white peppercorns, roasted garlic, and 8 secret wild botanicals.</p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="step-flow-card anim-step-cascade">
+            <div class="step-number-pill" style="background: var(--primary); color: #FFFFFF;">03</div>
+            <span class="crave-badge mb-2">Stage Three</span>
+            <h3 style="font-size: 1.35rem; font-weight: 800; margin-bottom: 0.75rem;">Flash Pressure<br>Peanut Oil Fry</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">Cooked at precisely calibrated
+              350°F in 100% pure peanut oil to flash-seal outer moisture and form an acoustic shatter-crunch crust.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SECTION 4: MOST LOVED COMBOS ================= -->
+    <section class="cc-section" id="loved-combos">
+      <div class="cc-container">
+        <div class="cc-section-header anim-fade-up">
+          <span class="crave-badge"><i class="fa-solid fa-heart"></i> Customer Approved</span>
+          <h2 class="cc-section-title">Most Loved Takeaway Combos</h2>
+          <p class="cc-section-subtitle">Specially bundled combinations delivering maximum flavor, value, and crunch
+            satisfaction.</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
+          <!-- Combo 1 -->
+          <div class="deal-card anim-skew-card">
+            <img src="https://images.unsplash.com/photo-1569058242253-92a9c755a0ec?auto=format&fit=crop&w=700&q=80"
+              alt="Crispy Duo Pack" class="deal-img">
+            <div class="deal-body">
+              <span class="crave-badge crave-badge-gold mb-2">Weekend Hit</span>
+              <h3 class="deal-title">Golden Thigh & Wings Duo</h3>
+              <p class="text-muted">4 crispy seasoned thighs, 8 Buffalo glaze wings, 2 seasoned fries, and 2 garlic
+                dips.</p>
+              <div class="deal-footer">
+                <span class="product-price">$24.99</span>
+                <button class="btn-crave btn-crave-primary btn-crave-sm btn-order-now"
+                  data-item="Golden Thigh & Wings Duo">Order Now</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Combo 2 -->
+          <div class="deal-card anim-skew-card">
+            <img src="https://images.unsplash.com/photo-1625813506062-0aeb1d7a094b?auto=format&fit=crop&w=700&q=80"
+              alt="Tower Burger Meal" class="deal-img">
+            <div class="deal-body">
+              <span class="crave-badge mb-2">Crowd Favorite</span>
+              <h3 class="deal-title">Tower Burger & Wings Platter</h3>
+              <p class="text-muted">1 Monster Crunch Burger, 4 buttermilk tenders, onion rings, and a large draft soda.
+              </p>
+              <div class="deal-footer">
+                <span class="product-price">$18.50</span>
+                <button class="btn-crave btn-crave-primary btn-crave-sm btn-order-now"
+                  data-item="Tower Burger & Wings Platter">Order Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SECTION 5: OUR FOOD EXPERIENCE ================= -->
+    <section class="cc-section" id="food-experience" style="background: var(--bg-card-alt);">
+      <div class="cc-container">
+        <div class="cc-section-header anim-fade-up">
+          <span class="crave-badge crave-badge-gold"><i class="fa-solid fa-sparkles"></i> Unrivaled Passion</span>
+          <h2 class="cc-section-title">The Crispy Crave Experience</h2>
+          <p class="cc-section-subtitle">We believe fast takeaway should never mean sacrificing chef-level ingredient
+            standards.</p>
+        </div>
+
+        <div class="experience-grid">
+          <div class="why-feature-card anim-pulse-box">
+            <div class="why-icon-box"><i class="fa-solid fa-shield-cat"></i></div>
+            <h3 class="why-card-title">Grade-A Ethical Poultry</h3>
+            <p class="text-muted">Zero artificial growth hormones. All chickens are vegetarian-fed and humanely raised
+              across trusted regional farms.</p>
+          </div>
+
+          <div class="why-feature-card anim-pulse-box">
+            <div class="why-icon-box" style="background: rgba(255,179,0,0.18); color: var(--secondary);"><i
+                class="fa-solid fa-fire"></i></div>
+            <h3 class="why-card-title">Fried In Small Batches</h3>
+            <p class="text-muted">We never fry in bulk to sit under heat lamps. Orders are battered and fried in
+              micro-batches upon confirmation, ensuring peak acoustic crunch and sizzling juicy warmth in every bite.</p>
+          </div>
+
+          <div class="why-feature-card anim-pulse-box">
+            <div class="why-icon-box" style="background: rgba(198,40,40,0.12); color: var(--primary);"><i
+                class="fa-solid fa-box-open"></i></div>
+            <h3 class="why-card-title">Vented Crisp Packaging</h3>
+            <p class="text-muted">Our custom thermal takeaway cartons feature micro-steam vents that let moisture escape
+              while retaining blistering heat.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SECTION 6: FOOD GALLERY (MASONRY & LIGHTBOX) ================= -->
+    <section class="cc-section" id="food-gallery">
+      <div class="cc-container">
+        <div class="cc-section-header anim-fade-up">
+          <span class="crave-badge"><i class="fa-solid fa-camera"></i> Delicious Moments</span>
+          <h2 class="cc-section-title">Food Lovers Gallery</h2>
+          <p class="cc-section-subtitle">Click any mouth-watering shot to inspect in crisp high definition.</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem;">
+          <!-- Gallery Item 1 -->
+          <a href="#" class="lightbox-trigger anim-iris-zoom"
+            data-src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=1200&q=80"
+            style="display: block; height: 260px; border-radius: 18px; overflow: hidden; position: relative;">
+            <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=600&q=80"
+              alt="Crispy Bucket Feast"
+              style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;">
+            <div
+              style="position: absolute; inset: 0; background: rgba(0,0,0,0.4); opacity: 0; transition: opacity 0.3s; display: flex; align-items: center; justify-content: center; color: #FFF; font-size: 1.5rem;"
+              onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0'">
+              <i class="fa-solid fa-magnifying-glass-plus"></i>
+            </div>
+          </a>
+
+          <!-- Gallery Item 2 -->
+          <a href="#" class="lightbox-trigger anim-iris-zoom"
+            data-src="https://images.unsplash.com/photo-1567620832903-9fc6debc209f?auto=format&fit=crop&w=1200&q=80"
+            style="display: block; height: 260px; border-radius: 18px; overflow: hidden; position: relative;">
+            <img src="https://images.unsplash.com/photo-1567620832903-9fc6debc209f?auto=format&fit=crop&w=600&q=80"
+              alt="Spicy Wings in sauce"
+              style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;">
+            <div
+              style="position: absolute; inset: 0; background: rgba(0,0,0,0.4); opacity: 0; transition: opacity 0.3s; display: flex; align-items: center; justify-content: center; color: #FFF; font-size: 1.5rem;"
+              onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0'">
+              <i class="fa-solid fa-magnifying-glass-plus"></i>
+            </div>
+          </a>
+
+          <!-- Gallery Item 3 -->
+          <a href="#" class="lightbox-trigger anim-iris-zoom"
+            data-src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=1200&q=80"
+            style="display: block; height: 260px; border-radius: 18px; overflow: hidden; position: relative;">
+            <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=600&q=80"
+              alt="Loaded Crispy Chicken Burger"
+              style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;">
+            <div
+              style="position: absolute; inset: 0; background: rgba(0,0,0,0.4); opacity: 0; transition: opacity 0.3s; display: flex; align-items: center; justify-content: center; color: #FFF; font-size: 1.5rem;"
+              onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0'">
+              <i class="fa-solid fa-magnifying-glass-plus"></i>
+            </div>
+          </a>
+
+          <!-- Gallery Item 4 -->
+          <a href="#" class="lightbox-trigger anim-iris-zoom"
+            data-src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=1200&q=80"
+            style="display: block; height: 260px; border-radius: 18px; overflow: hidden; position: relative;">
+            <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=600&q=80"
+              alt="Loaded Cajun Fries"
+              style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;">
+            <div
+              style="position: absolute; inset: 0; background: rgba(0,0,0,0.4); opacity: 0; transition: opacity 0.3s; display: flex; align-items: center; justify-content: center; color: #FFF; font-size: 1.5rem;"
+              onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0'">
+              <i class="fa-solid fa-magnifying-glass-plus"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SECTION 7: ORDER YOUR FAVOURITE (PROMO CTA) ================= -->
+    <section class="cc-section" id="order-favourite"
+      style="background: linear-gradient(135deg, #1A1A1A 0%, #0D0D0D 100%); color: #FFF;">
+      <div class="cc-container">
+        <div class="anim-curtain-fall"
+          style="display: grid; grid-template-columns: 1.2fr 0.8fr; align-items: center; gap: 3rem;">
+          <div>
+            <span class="crave-badge crave-badge-gold mb-3"><i class="fa-solid fa-truck-fast"></i> Ready When You
+              Arrive</span>
+            <h2
+              style="font-size: clamp(2.3rem, 4.2vw, 3.5rem); font-weight: 900; color: #FFF; line-height: 1.1; margin-bottom: 1.25rem;">
+              Ready For The Ultimate Chicken Crunch?
+            </h2>
+            <p style="font-size: 1.15rem; color: #B3B3B3; margin-bottom: 2rem;">
+              Skip the line! Order your freshly prepared, piping-hot chicken buckets and sandwiches online. Ready at the
+              counter in 15 minutes.
+            </p>
+            <div class="d-flex gap-3 flex-wrap">
+              <a href="menu.html" class="btn-crave btn-crave-primary btn-crave-lg">
+                <i class="fa-solid fa-bag-shopping"></i> Order Online Now
+              </a>
+              <a href="contact.html" class="btn-crave btn-crave-outline btn-crave-lg"
+                style="color: #FFF !important; border-color: #555;">
+                <i class="fa-solid fa-location-arrow"></i> Find Our Store
+              </a>
+            </div>
+          </div>
+
+          <div class="text-center">
+            <img src="https://images.unsplash.com/photo-1569058242253-92a9c755a0ec?auto=format&fit=crop&w=700&q=80"
+              alt="Crispy Crave signature takeaway order"
+              style="max-width: 100%; border-radius: 24px; box-shadow: 0 20px 50px rgba(0,0,0,0.6); border: 4px solid var(--secondary);"
+              class="floating-element">
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= LIGHTBOX MODAL ================= -->
+  <div id="lightboxModal" class="cc-lightbox-modal">
+    <button class="cc-lightbox-close">&times;</button>
+    <img id="lightboxImage" class="cc-lightbox-img" src="" alt="Zoomed Food Photography">
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="crave-footer">
+    <div class="cc-container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="crave-brand mb-3">
+            <div class="crave-logo-mark"><i class="fa-solid fa-drumstick-bite"></i></div>
+            <div class="crave-brand-name">
+              <span class="crave-brand-main">CRISPY CRAVE</span>
+              <span class="crave-brand-sub" style="color: var(--secondary);">PREMIUM TAKEAWAY</span>
+            </div>
+          </a>
+          <p class="footer-brand-desc">Artisanal double-dipped fried chicken handcrafted with farm-fresh poultry,
+            proprietary botanical spices, and unmatched crunchy passion.</p>
+          <div class="footer-socials">
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="footer-social-link"
+              aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener" class="footer-social-link"
+              aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://tiktok.com" target="_blank" rel="noopener" class="footer-social-link"
+              aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener" class="footer-social-link"
+              aria-label="X Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fa-solid fa-angle-right fa-xs"></i> Home 1 (Classic)</a></li>
+            <li><a href="home-2.html"><i class="fa-solid fa-angle-right fa-xs"></i> Home 2 (Split Hero)</a></li>
+            <li><a href="menu.html"><i class="fa-solid fa-angle-right fa-xs"></i> Full Food Menu</a></li>
+            <li><a href="offers.html"><i class="fa-solid fa-angle-right fa-xs"></i> Special Deals & Combos</a></li>
+            <li><a href="about.html"><i class="fa-solid fa-angle-right fa-xs"></i> Our Kitchen Story</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-angle-right fa-xs"></i> Contact & Locations</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Takeaway Hours</h4>
+          <div class="footer-contact-item">
+            <i class="fa-regular fa-clock"></i>
+            <div><strong class="footer-contact-label">Mon – Fri:</strong><br>10:30 AM – 11:00 PM</div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-regular fa-clock"></i>
+            <div><strong class="footer-contact-label">Sat – Sun:</strong><br>11:00 AM – 12:30 AM</div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>742 Evergreen Crunch Avenue,<br>Metro Foodie District</div>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Secret Crave Club</h4>
+          <p class="footer-newsletter-text">Subscribe to receive secret weekend discount codes, new menu
+            tastings, and free wing drops.</p>
+          <form class="footer-newsletter-form">
+            <input type="email" class="footer-newsletter-input" placeholder="Your email address..." required
+              aria-label="Email for newsletter">
+            <button type="submit" class="footer-newsletter-btn" aria-label="Subscribe to newsletter"><i
+                class="fa-solid fa-paper-plane"></i></button>
+          </form>
+          <small class="d-block mt-2" class="footer-spam-note">Zero spam. Unsubscribe at any
+            time.</small>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 <strong>Crispy Crave Takeaway</strong>. All Rights Reserved. Crafted with bold culinary
+          passion.</div>
+        <div class="d-flex align-items-center gap-3">
+          <a href="about.html" class="footer-bottom-link">Privacy Policy</a>
+          <a href="about.html" class="footer-bottom-link">Terms of Service</a>
+          <a href="contact.html" class="footer-bottom-link">Store Locator</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top" title="Scroll to top"><i
+      class="fa-solid fa-arrow-up"></i></button>
+
+  <!-- Drawer Backdrop Overlay -->
+  <div class="crave-drawer-overlay"></div>
+
+  <!-- ================= ORDER BAG SLIDE-OVER DRAWER ================= -->
+  <aside class="crave-slide-drawer" id="orderDrawer" aria-label="Takeaway Order Bag">
+    <div class="crave-drawer-header">
+      <h3 class="crave-drawer-title">
+        <i class="fa-solid fa-bag-shopping" style="color: var(--primary);"></i> Your Takeaway Bag
+      </h3>
+      <button class="crave-drawer-close" id="orderDrawerClose" aria-label="Close Bag">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <!-- Perks Progress Bar -->
+    <div class="crave-perks-box">
+      <div class="crave-perks-msg" id="orderPerksMsg">
+        🔥 Add <strong>$35.00</strong> more to unlock Free Cheesy Dip!
+      </div>
+      <div class="crave-perks-progress-track">
+        <div class="crave-perks-progress-fill" id="orderPerksFill"></div>
+      </div>
+    </div>
+
+    <!-- Drawer Body -->
+    <div class="crave-drawer-body">
+      <!-- Empty State -->
+      <div class="crave-drawer-empty" id="orderDrawerEmpty" style="display: none;">
+        <div class="crave-drawer-empty-icon"><i class="fa-solid fa-drumstick-bite"></i></div>
+        <h4 style="font-weight: 800; margin: 0;">Your bag is empty!</h4>
+        <p class="text-muted" style="font-size: 0.9rem; margin: 0;">Add delicious golden crispy chicken from our menu to
+          start your order.</p>
+        <a href="menu.html" class="btn-crave btn-crave-primary btn-crave-sm mt-2">Explore Menu</a>
+      </div>
+
+      <!-- Live Cart Items List -->
+      <div id="orderDrawerItems" class="d-flex flex-column gap-2"></div>
+    </div>
+
+    <!-- Drawer Footer -->
+    <div class="crave-drawer-footer" id="orderDrawerFooter">
+      <!-- Coupon Form -->
+      <form class="crave-coupon-wrap" id="couponForm">
+        <input type="text" id="couponInput" class="crave-coupon-input" placeholder="Promo code (CRAVE20)..."
+          aria-label="Enter coupon code">
+        <button type="submit" class="btn-crave btn-crave-gold btn-crave-sm"
+          style="padding: 0.4rem 0.9rem; font-size: 0.78rem;">Apply</button>
+      </form>
+
+      <!-- Bill Breakdown -->
+      <div class="d-flex flex-column gap-1">
+        <div class="crave-bill-row">
+          <span>Subtotal</span>
+          <span id="billSubtotal">$0.00</span>
+        </div>
+        <div class="crave-bill-row" id="billDiscountRow" style="display: none; color: var(--secondary);">
+          <span>Promo Discount</span>
+          <span id="billDiscount">-$0.00</span>
+        </div>
+        <div class="crave-bill-row">
+          <span>Estimated Tax (8%)</span>
+          <span id="billTax">$0.00</span>
+        </div>
+        <div class="crave-bill-row total">
+          <span>Total</span>
+          <span class="price" id="billTotal">$0.00</span>
+        </div>
+      </div>
+
+      <!-- Checkout CTA -->
+      <button class="btn-crave btn-crave-primary w-100" id="orderCheckoutBtn"
+        style="padding: 0.85rem; font-size: 1rem;">
+        <i class="fa-solid fa-fire-burner me-2"></i> Proceed to Takeaway Pickup
+      </button>
+    </div>
+  </aside>
+
+  <!-- ================= WISHLIST / CRAVE-LIST SLIDE-OVER DRAWER ================= -->
+  <aside class="crave-slide-drawer" id="wishlistDrawer" aria-label="Crave-List Favorites">
+    <div class="crave-drawer-header">
+      <h3 class="crave-drawer-title">
+        <i class="fa-solid fa-heart" style="color: var(--primary);"></i> Your Crave-List
+      </h3>
+      <button class="crave-drawer-close" id="wishlistDrawerClose" aria-label="Close Crave-List">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <div class="crave-drawer-body">
+      <!-- Empty State -->
+      <div class="crave-drawer-empty" id="wishlistDrawerEmpty" style="display: none;">
+        <div class="crave-drawer-empty-icon"><i class="fa-regular fa-heart"></i></div>
+        <h4 style="font-weight: 800; margin: 0;">Nothing saved yet</h4>
+        <p class="text-muted" style="font-size: 0.9rem; margin: 0;">Tap the heart icon on any food item to save your
+          cravings for later.</p>
+        <a href="menu.html" class="btn-crave btn-crave-primary btn-crave-sm mt-2">Browse Favorites</a>
+      </div>
+
+      <!-- Wishlist Items List -->
+      <div id="wishlistDrawerItems" class="d-flex flex-column gap-2"></div>
+    </div>
+
+    <div class="crave-drawer-footer">
+      <button class="btn-crave btn-crave-primary w-100" id="wishlistMoveAll">
+        <i class="fa-solid fa-bag-shopping me-2"></i> Move All to Bag
+      </button>
+    </div>
+  </aside>
+
+  <!-- ================= FOOD QUICK-VIEW MODAL ================= -->
+  <div class="crave-qv-modal" id="quickViewModal" role="dialog" aria-modal="true" aria-label="Food Details">
+    <div class="crave-qv-dialog">
+      <button class="crave-qv-close" id="quickViewClose" aria-label="Close dialog"><i
+          class="fa-solid fa-xmark"></i></button>
+      <div class="crave-qv-img-wrap">
+        <img id="qvImage" src="" alt="Crispy Food Preview" class="crave-qv-img">
+      </div>
+      <div class="crave-qv-content">
+        <div class="d-flex align-items-center justify-content-between">
+          <span class="crave-badge crave-badge-gold"><i class="fa-solid fa-fire"></i> Signature Recipe</span>
+          <span id="qvPrice" class="product-price" style="font-size: 1.45rem;">$12.99</span>
+        </div>
+        <h3 id="qvTitle" style="font-size: 1.5rem; font-weight: 800; margin: 0;">Crispy Master Selection</h3>
+        <p id="qvDesc" class="text-muted" style="font-size: 0.92rem; line-height: 1.5; margin: 0;">
+          Dipped in spiced buttermilk batter and pressure-fried to seal in maximum moisture with acoustic shatter
+          crunch.
+        </p>
+
+        <!-- Dietary Highlights -->
+        <div class="d-flex gap-2 flex-wrap" style="font-size: 0.78rem; font-weight: 700;">
+          <span class="crave-badge"><i class="fa-solid fa-shield-halved"></i> 100% Halal Poultry</span>
+          <span class="crave-badge"><i class="fa-solid fa-wheat-awn"></i> Zero Trans Fat</span>
+        </div>
+
+        <!-- Dip Selector -->
+        <div>
+          <label style="font-size: 0.85rem; font-weight: 800; display: block; margin-bottom: 0.4rem;">Choose Dipping
+            Sauce:</label>
+          <div class="crave-qv-sauces">
+            <span class="crave-sauce-pill active">Garlic Herb Aioli</span>
+            <span class="crave-sauce-pill">Hot Honey Glaze</span>
+            <span class="crave-sauce-pill">Smoky BBQ</span>
+            <span class="crave-sauce-pill">Creamy Ranch</span>
+          </div>
+        </div>
+
+        <!-- Quantity & Add to Cart -->
+        <div class="d-flex align-items-center gap-3 pt-2">
+          <div class="drawer-qty-stepper" style="padding: 0.2rem 0.5rem;">
+            <input type="number" id="qvQty" value="1" min="1" max="20"
+              style="width: 50px; border: none; background: transparent; text-align: center; font-weight: 800; color: var(--text-main);"
+              aria-label="Quantity">
+          </div>
+          <button class="btn-crave btn-crave-primary flex-grow-1" id="qvAddToCart">
+            <i class="fa-solid fa-plus me-1"></i> Add To Bag
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

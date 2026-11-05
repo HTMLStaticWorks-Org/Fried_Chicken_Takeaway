@@ -1,0 +1,198 @@
+/* CRISPY CRAVE - Dark Mode Stylesheet */
+[data-theme="dark"] {
+  --bg-main: #141414;
+  --bg-card: #1E1E1E;
+  --bg-card-alt: #242424;
+  --bg-subtle: #2A2A2A;
+
+  --text-main: #F5F5F7;
+  --text-muted: #B3B3B3;
+  --text-light: #FFFFFF;
+
+  --border-color: rgba(255, 179, 0, 0.18);
+  --border-light: rgba(255, 255, 255, 0.08);
+
+  --shadow-sm: 0 4px 14px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 10px 28px rgba(0, 0, 0, 0.55);
+  --shadow-lg: 0 20px 45px rgba(0, 0, 0, 0.7);
+}
+
+[data-theme="dark"] .crave-header {
+  background: rgba(20, 20, 20, 0.96);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+[data-theme="dark"] .crave-header.scrolled {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+}
+
+[data-theme="dark"] .crave-brand-main {
+  color: #FF5252;
+}
+
+[data-theme="dark"] .crave-brand-sub {
+  color: var(--secondary);
+}
+
+[data-theme="dark"] .crave-dropdown-menu,
+[data-theme="dark"] .crave-mobile-drawer {
+  background: #1C1C1C;
+  border-color: #333;
+}
+
+[data-theme="dark"] .crave-dropdown-item:hover {
+  background: #282828;
+}
+
+[data-theme="dark"] .crave-icon-btn,
+[data-theme="dark"] .crave-hamburger {
+  background: #222;
+  border-color: #333;
+  color: #FFF;
+}
+
+[data-theme="dark"] .crave-hamburger span {
+  background: #FFF;
+}
+
+[data-theme="dark"] .hero-s1 {
+  background: radial-gradient(circle at 75% 35%, rgba(255, 179, 0, 0.09) 0%, rgba(20, 20, 20, 0) 65%),
+              radial-gradient(circle at 20% 80%, rgba(198, 40, 40, 0.12) 0%, rgba(20, 20, 20, 0) 55%);
+}
+
+[data-theme="dark"] .hero-split {
+  background: linear-gradient(105deg, #141414 50%, #1A1A1A 50%);
+}
+
+[data-theme="dark"] .floating-badge {
+  background: rgba(30, 30, 30, 0.92);
+  border-color: rgba(255, 179, 0, 0.25);
+  color: #FFF;
+}
+
+[data-theme="dark"] .badge-text-title {
+  color: #FFF;
+}
+
+[data-theme="dark"] .product-card,
+[data-theme="dark"] .why-feature-card,
+[data-theme="dark"] .deal-card,
+[data-theme="dark"] .review-card,
+[data-theme="dark"] .contact-info-card,
+[data-theme="dark"] .contact-form-card {
+  background: #1C1C1C;
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+[data-theme="dark"] .product-img-wrap {
+  background: #272727;
+}
+
+[data-theme="dark"] .cat-filter-btn {
+  background: #222;
+  border-color: #333;
+  color: #CCC;
+}
+
+[data-theme="dark"] .cat-filter-btn.active,
+[data-theme="dark"] .cat-filter-btn:hover {
+  background: var(--primary);
+  color: #FFF;
+}
+
+[data-theme="dark"] .crave-footer {
+  background: #0D0D0D;
+  border-top-color: var(--primary);
+  color: #A0A0A0;
+}
+
+[data-theme="dark"] .footer-brand-title,
+[data-theme="dark"] .footer-col-title,
+[data-theme="dark"] .footer-contact-label {
+  color: #FFFFFF;
+}
+
+[data-theme="dark"] .footer-brand-desc,
+[data-theme="dark"] .footer-links a,
+[data-theme="dark"] .footer-contact-item,
+[data-theme="dark"] .footer-newsletter-text,
+[data-theme="dark"] .footer-spam-note,
+[data-theme="dark"] .footer-bottom-link {
+  color: #A0A0A0;
+}
+
+[data-theme="dark"] .footer-links a:hover,
+[data-theme="dark"] .footer-bottom-link:hover {
+  color: var(--secondary);
+}
+
+[data-theme="dark"] .footer-social-link {
+  background: #1C1C1C;
+  color: #FFFFFF;
+  border-color: #2E2E2E;
+  -webkit-tap-highlight-color: transparent;
+}
+
+[data-theme="dark"] .footer-social-link:hover,
+[data-theme="dark"] .footer-social-link:focus,
+[data-theme="dark"] .footer-social-link:focus-visible,
+[data-theme="dark"] .footer-social-link:active,
+[data-theme="dark"] .footer-social-link.touch-active {
+  background: var(--primary) !important;
+  border-color: var(--primary) !important;
+  color: #FFFFFF !important;
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(198, 40, 40, 0.4);
+}
+
+[data-theme="dark"] .footer-social-link:hover i,
+[data-theme="dark"] .footer-social-link:focus i,
+[data-theme="dark"] .footer-social-link:focus-visible i,
+[data-theme="dark"] .footer-social-link:active i,
+[data-theme="dark"] .footer-social-link.touch-active i {
+  color: #FFFFFF !important;
+}
+
+[data-theme="dark"] .footer-newsletter-input {
+  background: #1A1A1A;
+  border-color: #333;
+  color: #FFF;
+}
+
+[data-theme="dark"] .footer-newsletter-input:focus {
+  border-color: var(--secondary);
+  background: #222;
+  box-shadow: 0 0 0 3px rgba(255, 179, 0, 0.15);
+}
+
+[data-theme="dark"] .footer-bottom {
+  border-top-color: #1F1F1F;
+}
+
+[data-theme="dark"] .inner-hero {
+  background: radial-gradient(circle at 80% 20%, rgba(255, 179, 0, 0.08) 0%, transparent 60%),
+              radial-gradient(circle at 10% 80%, rgba(198, 40, 40, 0.08) 0%, transparent 60%);
+  border-bottom-color: rgba(255, 255, 255, 0.08);
+}
+
+[data-theme="dark"] .form-control-crave {
+  background: #242424;
+  border-color: #383838;
+  color: #FFF;
+}
+
+[data-theme="dark"] .form-control-crave:focus {
+  background: #2A2A2A;
+  border-color: var(--secondary);
+}
+
+
+[data-theme="dark"] .crave-mobile-sublinks {
+  border-left-color: rgba(255, 179, 0, 0.35);
+}
+
+[data-theme="dark"] .crave-mobile-sublink:hover,
+[data-theme="dark"] .crave-mobile-sublink:focus,
+[data-theme="dark"] .crave-mobile-sublink.active {
+  background: rgba(255, 179, 0, 0.12);
+}
