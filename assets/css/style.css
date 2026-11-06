@@ -2404,22 +2404,35 @@ img {
   .final-cta-banner .d-flex.gap-3.flex-wrap,
   .final-cta-banner .final-cta-buttons {
     display: flex !important;
-    flex-direction: row !important;
-    flex-wrap: wrap !important;
+    flex-direction: column !important;
     justify-content: center !important;
     align-items: center !important;
-    margin: 0 auto 1rem !important;
+    margin: 0 auto 1.25rem !important;
     width: 100% !important;
-    max-width: 560px !important;
-    gap: 1rem !important;
+    max-width: 380px !important;
+    gap: 0.85rem !important;
+    box-sizing: border-box !important;
   }
 
-  .final-cta-buttons .btn-crave {
-    flex: 0 1 auto !important;
+  #final-cta .final-cta-buttons .btn-crave,
+  #visit-taste .final-cta-buttons .btn-crave,
+  #promo-cta .final-cta-buttons .btn-crave,
+  #contact-order-cta .final-cta-buttons .btn-crave,
+  .final-cta-buttons .btn-crave,
+  .final-cta-banner .btn-crave,
+  .final-cta-banner .btn-crave-lg {
+    width: 100% !important;
+    max-width: 350px !important;
+    min-width: 0 !important;
+    height: 52px !important;
+    padding: 0 1.25rem !important;
+    font-size: 0.92rem !important;
     display: inline-flex !important;
     align-items: center !important;
     justify-content: center !important;
     text-align: center !important;
+    box-sizing: border-box !important;
+    white-space: nowrap !important;
   }
 
   #final-cta .final-cta-img-box,
@@ -2509,23 +2522,30 @@ img {
   #order-favourite .order-favourite-buttons,
   .order-favourite-buttons {
     display: flex !important;
-    flex-direction: row !important;
-    flex-wrap: wrap !important;
+    flex-direction: column !important;
     justify-content: center !important;
     align-items: center !important;
     width: 100% !important;
-    max-width: 540px !important;
-    margin: 0 auto 1rem !important;
-    gap: 1rem !important;
+    max-width: 380px !important;
+    margin: 0 auto 1.25rem !important;
+    gap: 0.85rem !important;
+    box-sizing: border-box !important;
   }
 
   #order-favourite .order-favourite-buttons .btn-crave,
   .order-favourite-buttons .btn-crave {
-    flex: 0 1 auto !important;
+    width: 100% !important;
+    max-width: 350px !important;
+    min-width: 0 !important;
+    height: 52px !important;
+    padding: 0 1.25rem !important;
+    font-size: 0.92rem !important;
     display: inline-flex !important;
     align-items: center !important;
     justify-content: center !important;
     text-align: center !important;
+    box-sizing: border-box !important;
+    white-space: nowrap !important;
   }
 
   #order-favourite .order-favourite-img-box,
@@ -2573,9 +2593,20 @@ img {
   }
 
   .menu-order-card .btn-crave {
+    width: 100% !important;
+    max-width: 350px !important;
+    min-width: 0 !important;
+    height: 52px !important;
+    padding: 0 1.25rem !important;
+    font-size: 0.92rem !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    box-sizing: border-box !important;
     margin-left: auto !important;
     margin-right: auto !important;
-    justify-content: center !important;
+    white-space: nowrap !important;
   }
   
   .hero-s1-desc {
@@ -5066,26 +5097,28 @@ img {
   }
   .order-favourite-buttons {
     display: flex !important;
-    flex-direction: row !important;
+    flex-direction: column !important;
     justify-content: center !important;
     align-items: center !important;
     width: 100% !important;
-    max-width: 500px !important;
-    margin: 0 auto !important;
-    gap: 1rem !important;
+    max-width: 380px !important;
+    margin: 0 auto 1.25rem !important;
+    gap: 0.85rem !important;
+    box-sizing: border-box !important;
   }
   .order-favourite-buttons .btn-crave {
-    flex: 1 1 200px !important;
-    width: 220px !important;
-    max-width: 240px !important;
-    min-width: 180px !important;
+    width: 100% !important;
+    max-width: 350px !important;
+    min-width: 0 !important;
     height: 52px !important;
     padding: 0 1.25rem !important;
     display: inline-flex !important;
     align-items: center !important;
     justify-content: center !important;
+    text-align: center !important;
     box-sizing: border-box !important;
     font-size: 0.92rem !important;
+    white-space: nowrap !important;
   }
   .order-favourite-img-box {
     display: flex !important;
