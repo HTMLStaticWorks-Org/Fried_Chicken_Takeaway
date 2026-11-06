@@ -553,10 +553,11 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 0.85rem 1rem;
-  background: var(--bg-card-alt);
-  border-radius: var(--radius-md);
-  border: 1px solid var(--border-light);
+  padding: 0.5rem 0.25rem;
+  background: transparent !important;
+  border-radius: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
   gap: 0.75rem;
 }
 
