@@ -111,6 +111,17 @@ function initNavigation() {
 
     overlay.addEventListener('click', closeMobileNav);
 
+    const mobileCloseBtn = drawer.querySelector('.crave-mobile-close');
+    if (mobileCloseBtn) {
+      mobileCloseBtn.addEventListener('click', closeMobileNav);
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && drawer.classList.contains('open')) {
+        closeMobileNav();
+      }
+    });
+
     // Dropdown toggles inside mobile drawer
     const mobileDropdownToggles = drawer.querySelectorAll('.crave-mobile-dropdown-toggle');
     mobileDropdownToggles.forEach(toggle => {

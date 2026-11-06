@@ -196,3 +196,16 @@
 [data-theme="dark"] .crave-mobile-sublink.active {
   background: rgba(255, 179, 0, 0.12);
 }
+
+[data-theme="dark"] .crave-mobile-close {
+  background: #252525;
+  border-color: #383838;
+  color: #fff;
+}
+
+[data-theme="dark"] .crave-mobile-close:hover,
+[data-theme="dark"] .crave-mobile-close:focus {
+  background: rgba(255, 179, 0, 0.15);
+  border-color: var(--accent);
+  color: var(--accent);
+}
