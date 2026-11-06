@@ -164,20 +164,31 @@
     <section class="cc-section hero-split" id="hero-split">
       <div class="cc-container">
         <div class="hero-split-grid">
-          <!-- Left Column: Bold Typography -->
+          <!-- Left Column: Bold Interactive Typography -->
           <div class="anim-slide-left">
             <div class="crave-badge crave-badge-gold mb-3">
-              <i class="fa-solid fa-sparkles"></i> The Modern Crunchy Revolution
+              <i class="fa-solid fa-sparkles text-warning"></i> Handcrafted Daily • Micro-Batch Fry
             </div>
-            <h1
-              style="font-size: clamp(2.8rem, 5.2vw, 4.3rem); font-weight: 900; line-height: 1.05; letter-spacing: -0.03em; margin-bottom: 1.5rem;">
-              TASTE THE ART OF <span style="color: var(--primary);">EXTRA CRUNCH!</span>
+            <h1 class="hero-split-title">
+              TASTE THE ART OF <span class="text-primary">EXTRA CRUNCH!</span>
             </h1>
-            <p
-              style="font-size: 1.15rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 2rem; max-width: 520px;">
+            <p class="hero-split-desc">
               Engineered for genuine fried chicken enthusiasts. Crisp, golden, spiced batter coating ultra-succulent
               chicken that crackles with intensity at every bite.
             </p>
+
+            <!-- Interactive Flavor Heat Selector -->
+            <div class="hero-flavor-tags">
+              <span class="hero-flavor-label"><i class="fa-solid fa-pepper-hot text-danger me-1"></i> Choose Your Crunch Style:</span>
+              <div class="hero-flavor-chips">
+                <button type="button" class="flavor-chip active" data-flavor="classic"><i class="fa-solid fa-drumstick-bite text-warning"></i> Golden Classic</button>
+                <button type="button" class="flavor-chip" data-flavor="hot"><i class="fa-solid fa-fire text-danger"></i> Nashville Hot</button>
+                <button type="button" class="flavor-chip" data-flavor="honey"><i class="fa-solid fa-droplet text-warning"></i> Honey Mustard</button>
+                <button type="button" class="flavor-chip" data-flavor="garlic"><i class="fa-solid fa-mortar-pestle text-success"></i> Garlic Butter</button>
+              </div>
+            </div>
+
+            <!-- CTA Buttons -->
             <div class="d-flex align-items-center gap-3 flex-wrap">
               <a href="menu.html" class="btn-crave btn-crave-primary btn-crave-lg">
                 <i class="fa-solid fa-bag-shopping"></i> Order Online Now
@@ -186,17 +197,58 @@
                 <i class="fa-solid fa-book-open"></i> The Secret Recipe
               </a>
             </div>
+
+            <!-- Social Proof Reviewers -->
+            <div class="hero-social-proof">
+              <div class="hero-avatar-group">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80" alt="Foodie Reviewer" class="hero-avatar">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80" alt="Foodie Reviewer" class="hero-avatar">
+                <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=120&q=80" alt="Foodie Reviewer" class="hero-avatar">
+              </div>
+              <div class="hero-proof-text">
+                <div class="hero-stars">
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <span class="fw-bold ms-1" style="color: var(--text-main);">4.9 / 5</span>
+                </div>
+                <span class="hero-proof-sub">Loved by 12,000+ takeaway lovers</span>
+              </div>
+            </div>
           </div>
 
-          <!-- Right Column: Large Diagonal Reveal Chicken Bucket -->
-          <div class="anim-diagonal-slash text-center position-relative">
-            <img
-              src="https://images.pexels.com/photos/13795425/pexels-photo-13795425.jpeg?auto=compress&cs=tinysrgb&w=1200"
-              alt="Grand Crispy Fried Chicken Feast" class="diagonal-hero-img shadow-lg"
-              style="width: 100%; max-height: 480px; object-fit: cover; border: 4px solid var(--primary);">
-            <div class="crave-badge crave-badge-glow position-absolute"
-              style="bottom: 25px; left: 25px; background: #FFF; color: #171717; padding: 0.8rem 1.4rem; font-size: 0.95rem;">
-              <i class="fa-solid fa-bolt text-warning"></i> 100% Double-Dipped Crunch
+          <!-- Right Column: Layered Multi-Card Floating Showcase -->
+          <div class="anim-slide-right">
+            <div class="hero-split-canvas">
+              <!-- Floating Deal Pill -->
+              <div class="hero-split-badge-deal">
+                <div class="deal-icon-fire"><i class="fa-solid fa-fire-flame-curved"></i></div>
+                <div>
+                  <div class="deal-title">20% OFF FIRST ORDER</div>
+                  <div class="deal-code">CODE: <span class="fw-bold" style="color: #FFD54F;">CRISP20</span></div>
+                </div>
+              </div>
+
+              <!-- Main Hero Showcase Card -->
+              <div class="hero-split-main-card">
+                <img
+                  src="https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=1000&q=80"
+                  alt="Shatter-Crunch Golden Fried Chicken" class="hero-split-img">
+                <div class="hero-split-badge-seal">
+                  <i class="fa-solid fa-shield-halved text-warning me-1"></i> 24h Buttermilk Marinated
+                </div>
+              </div>
+
+              <!-- Floating Timer Pill -->
+              <div class="hero-split-badge-timer">
+                <div class="timer-icon-circle"><i class="fa-solid fa-clock-rotate-left"></i></div>
+                <div>
+                  <div class="timer-title">Piping Hot Takeaway</div>
+                  <div class="timer-desc"><span class="pulse-indicator"></span> Ready in 15 Minutes</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

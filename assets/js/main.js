@@ -6,6 +6,17 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
+  // Home 2 Hero Flavor Chips Selector
+  const flavorChips = document.querySelectorAll('.flavor-chip');
+  if (flavorChips.length > 0) {
+    flavorChips.forEach(chip => {
+      chip.addEventListener('click', () => {
+        flavorChips.forEach(c => c.classList.remove('active'));
+        chip.classList.add('active');
+      });
+    });
+  }
+
   initTheme();
   initRTL();
   initNavigation();
