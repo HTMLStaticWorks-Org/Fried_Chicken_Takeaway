@@ -2312,14 +2312,45 @@ img {
   }
 
   .hero-s1-grid,
-  .hero-split-grid,
-  /* hero-split-grid handled */
-  .final-cta-grid {
+  .hero-split-grid {
     grid-template-columns: 1fr !important;
     text-align: center !important;
     gap: 2.5rem !important;
   }
 
+  /* All Pages Before-Footer Banner Cards Centered Alignment (1024px) */
+  #final-cta .final-cta-banner,
+  #visit-taste .final-cta-banner,
+  #promo-cta .final-cta-banner,
+  #contact-order-cta .final-cta-banner,
+  .final-cta-banner {
+    text-align: center !important;
+    padding: 3.5rem 2.25rem !important;
+    border-radius: 28px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  #final-cta .final-cta-grid,
+  #visit-taste .final-cta-grid,
+  #promo-cta .final-cta-grid,
+  #contact-order-cta .final-cta-grid,
+  .final-cta-grid {
+    grid-template-columns: 1fr !important;
+    text-align: center !important;
+    gap: 2.5rem !important;
+    justify-items: center !important;
+    align-items: center !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+  }
+
+  #final-cta .final-cta-content,
+  #visit-taste .final-cta-content,
+  #promo-cta .final-cta-content,
+  #contact-order-cta .final-cta-content,
   .final-cta-content {
     display: flex !important;
     flex-direction: column !important;
@@ -2327,53 +2358,224 @@ img {
     text-align: center !important;
     max-width: 720px !important;
     margin: 0 auto !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
   }
 
-  .final-cta-banner .crave-badge {
+  #final-cta .final-cta-title,
+  #visit-taste .final-cta-title,
+  #promo-cta .final-cta-title,
+  #contact-order-cta .final-cta-title,
+  .final-cta-title {
+    text-align: center !important;
     margin-left: auto !important;
     margin-right: auto !important;
+    width: 100% !important;
+    line-height: 1.2 !important;
   }
 
-  .final-cta-banner .d-flex.gap-3.flex-wrap,
-  .final-cta-buttons {
-    justify-content: center !important;
-  }
-
-  .final-cta-img-box {
-    display: flex !important;
-    justify-content: center !important;
+  #final-cta .final-cta-desc,
+  #visit-taste .final-cta-desc,
+  #promo-cta .final-cta-desc,
+  #contact-order-cta .final-cta-desc,
+  .final-cta-desc {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    max-width: 680px !important;
     width: 100% !important;
   }
 
-  .final-cta-img {
-    transform: none !important;
-    max-width: min(100%, 460px) !important;
-    margin: 0 auto !important;
+  #final-cta .crave-badge,
+  #visit-taste .crave-badge,
+  #promo-cta .crave-badge,
+  #contact-order-cta .crave-badge,
+  .final-cta-banner .crave-badge {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: inline-flex !important;
   }
 
-  #order-favourite .anim-curtain-fall {
+  #final-cta .final-cta-buttons,
+  #visit-taste .final-cta-buttons,
+  #promo-cta .final-cta-buttons,
+  #contact-order-cta .final-cta-buttons,
+  .final-cta-buttons,
+  .final-cta-banner .d-flex.gap-3.flex-wrap,
+  .final-cta-banner .final-cta-buttons {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin: 0 auto 1rem !important;
+    width: 100% !important;
+    max-width: 560px !important;
+    gap: 1rem !important;
+  }
+
+  .final-cta-buttons .btn-crave {
+    flex: 0 1 auto !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+
+  #final-cta .final-cta-img-box,
+  #visit-taste .final-cta-img-box,
+  #promo-cta .final-cta-img-box,
+  #contact-order-cta .final-cta-img-box,
+  .final-cta-img-box {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+  }
+
+  #final-cta .final-cta-img,
+  #visit-taste .final-cta-img,
+  #promo-cta .final-cta-img,
+  #contact-order-cta .final-cta-img,
+  .final-cta-img {
+    transform: none !important;
+    max-width: min(100%, 480px) !important;
+    margin: 0 auto !important;
+    display: block !important;
+  }
+
+  /* Home 2 Order Favourite Card (1024px) */
+  #order-favourite .order-favourite-card,
+  .order-favourite-card {
+    padding: 3.5rem 2.25rem !important;
+    border-radius: 28px !important;
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  #order-favourite .order-favourite-grid,
+  .order-favourite-grid {
     grid-template-columns: 1fr !important;
     text-align: center !important;
     gap: 2.5rem !important;
+    justify-items: center !important;
+    align-items: center !important;
+    width: 100% !important;
+    margin: 0 auto !important;
   }
-  #order-favourite .anim-curtain-fall > div:first-child {
+
+  #order-favourite .order-favourite-content,
+  .order-favourite-content {
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
     text-align: center !important;
     max-width: 720px !important;
     margin: 0 auto !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
   }
-  #order-favourite .crave-badge {
+
+  #order-favourite .crave-badge,
+  .order-favourite-card .crave-badge {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: inline-flex !important;
+  }
+
+  #order-favourite .order-favourite-title,
+  .order-favourite-title {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 100% !important;
+    line-height: 1.2 !important;
+  }
+
+  #order-favourite .order-favourite-desc,
+  .order-favourite-desc {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    max-width: 680px !important;
+    width: 100% !important;
+  }
+
+  #order-favourite .order-favourite-buttons,
+  .order-favourite-buttons {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+    max-width: 540px !important;
+    margin: 0 auto 1rem !important;
+    gap: 1rem !important;
+  }
+
+  #order-favourite .order-favourite-buttons .btn-crave,
+  .order-favourite-buttons .btn-crave {
+    flex: 0 1 auto !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+
+  #order-favourite .order-favourite-img-box,
+  .order-favourite-img-box {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+  }
+
+  #order-favourite .order-favourite-img,
+  .order-favourite-img,
+  #order-favourite img {
+    transform: none !important;
+    margin: 0 auto !important;
+    max-width: min(100%, 480px) !important;
+    display: block !important;
+  }
+
+  /* Menu Page Final Order Card (1024px) */
+  .menu-order-card {
+    text-align: center !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
     margin-left: auto !important;
     margin-right: auto !important;
   }
-  #order-favourite .d-flex.gap-3.flex-wrap {
-    justify-content: center !important;
+
+  .menu-order-card-title {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 100% !important;
   }
-  #order-favourite img {
-    margin: 0 auto !important;
-    max-width: min(100%, 460px) !important;
+
+  .menu-order-card-desc {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    max-width: 500px !important;
+    width: 100% !important;
+  }
+
+  .menu-order-card .btn-crave {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    justify-content: center !important;
   }
   
   .hero-s1-desc {
