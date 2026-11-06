@@ -89,18 +89,24 @@
 [dir="rtl"] .contact-map-card,
 [dir="rtl"] .anim-radar-map .floating-badge,
 [dir="rtl"] .anim-radar-map .floating-badge-bottom {
-  left: auto !important;
-  right: 25px !important;
-  width: auto !important;
-  max-width: calc(100% - 50px) !important;
+  left: 50% !important;
+  right: auto !important;
+  transform: translateX(-50%) !important;
+  max-width: min(calc(100% - 32px), 380px) !important;
+  width: max-content !important;
+}
+
+[dir="rtl"] .contact-map-info {
+  text-align: right !important;
 }
 
 @media (max-width: 480px) {
   [dir="rtl"] .contact-map-card,
   [dir="rtl"] .anim-radar-map .floating-badge,
   [dir="rtl"] .anim-radar-map .floating-badge-bottom {
-    left: auto !important;
-    right: 15px !important;
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%) !important;
   }
 }
 
