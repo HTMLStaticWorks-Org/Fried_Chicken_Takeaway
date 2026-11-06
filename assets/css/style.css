@@ -532,18 +532,20 @@ img {
 .crave-mobile-drawer .crave-brand {
   display: flex !important;
   align-items: center !important;
-  gap: 1.05rem !important;
-  flex-shrink: 0;
+  gap: 1.6rem !important;
+  flex-shrink: 0 !important;
 }
 
+.crave-mobile-drawer .crave-brand .crave-logo-mark,
 .crave-mobile-drawer .crave-logo-mark {
-  flex-shrink: 0;
+  flex-shrink: 0 !important;
+  margin-inline-end: 0.35rem !important;
 }
 
 .crave-mobile-drawer .crave-brand-name {
   display: flex !important;
   flex-direction: column !important;
-  gap: 2px;
+  gap: 2px !important;
 }
 
 /* Mobile Drawer Actions Bar */
@@ -4038,7 +4040,7 @@ img {
 
 @media (max-width: 360px) {
   .crave-mobile-drawer .crave-brand {
-    gap: 0.85rem !important;
+    gap: 1.25rem !important;
   }
   .final-cta-banner {
     padding: 1.5rem 0.75rem !important;
