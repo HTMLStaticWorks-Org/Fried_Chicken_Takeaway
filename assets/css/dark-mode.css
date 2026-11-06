@@ -209,3 +209,26 @@
   border-color: var(--accent);
   color: var(--accent);
 }
+
+[data-theme="dark"] .explore-category-card {
+  background: #1C1C1C;
+  border-color: #2D2D2D;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="dark"] .explore-category-card:hover,
+[data-theme="dark"] .explore-category-card:focus,
+[data-theme="dark"] .explore-category-card.touch-active {
+  border-color: var(--accent);
+  box-shadow: 0 16px 36px rgba(255, 179, 0, 0.16);
+}
+
+[data-theme="dark"] .explore-category-card:hover .explore-category-title,
+[data-theme="dark"] .explore-category-card:focus .explore-category-title,
+[data-theme="dark"] .explore-category-card.touch-active .explore-category-title {
+  color: var(--accent);
+}
+
+[data-theme="dark"] .explore-category-link {
+  color: var(--accent);
+}
