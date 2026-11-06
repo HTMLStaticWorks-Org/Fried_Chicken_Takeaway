@@ -1451,6 +1451,7 @@ img {
 /* Menu Final Order CTA Card */
 .menu-order-card {
   max-width: 680px;
+  width: 100%;
   margin: 4.5rem auto 1rem;
   background: var(--bg-card);
   border: 1px solid var(--border-light);
@@ -1460,6 +1461,7 @@ img {
   box-shadow: var(--shadow-md);
   position: relative;
   overflow: hidden;
+  box-sizing: border-box;
   transition: var(--transition-bounce);
 }
 
@@ -1471,11 +1473,14 @@ img {
 
 .menu-order-card-title {
   font-family: var(--font-heading);
-  font-size: 1.5rem;
+  font-size: clamp(1.35rem, 3.5vw, 1.7rem);
   font-weight: 800;
   color: var(--text-main);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.65rem;
   text-align: center;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  line-height: 1.25;
 }
 
 .menu-order-card-desc {
@@ -1485,6 +1490,8 @@ img {
   margin: 0 auto 1.75rem;
   text-align: center;
   line-height: 1.6;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 .menu-order-card .btn-crave {
@@ -1493,6 +1500,8 @@ img {
   justify-content: center;
   gap: 0.65rem;
   margin: 0 auto;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 /* FOOTER */
@@ -2389,6 +2398,16 @@ img {
 }
 
 @media (max-width: 768px) {
+  .menu-order-card {
+    padding: 2.5rem 1.75rem !important;
+    margin: 3rem auto 1rem !important;
+    border-radius: 24px !important;
+  }
+  .menu-order-card .btn-crave-lg {
+    padding: 0.85rem 1.75rem !important;
+    font-size: 0.95rem !important;
+  }
+
   .hero-split {
     padding: 3.5rem 0 4.5rem !important;
   }
@@ -2487,6 +2506,30 @@ img {
 }
 
 @media (max-width: 480px) {
+  .menu-order-card {
+    padding: 2rem 1.15rem !important;
+    margin: 2.25rem auto 1rem !important;
+    border-radius: 20px !important;
+  }
+  .menu-order-card-title {
+    font-size: 1.3rem !important;
+    line-height: 1.25 !important;
+  }
+  .menu-order-card-desc {
+    font-size: 0.9rem !important;
+    margin-bottom: 1.35rem !important;
+  }
+  .menu-order-card .btn-crave {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0.85rem 1rem !important;
+    font-size: 0.88rem !important;
+    justify-content: center !important;
+    text-align: center !important;
+    white-space: normal !important;
+    box-sizing: border-box !important;
+  }
+
   .hero-split-title {
     font-size: 2.15rem !important;
   }
