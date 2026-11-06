@@ -85,6 +85,25 @@
   right: -20px;
 }
 
+/* Contact Page Map Floating Pin Card RTL Alignment */
+[dir="rtl"] .contact-map-card,
+[dir="rtl"] .anim-radar-map .floating-badge,
+[dir="rtl"] .anim-radar-map .floating-badge-bottom {
+  left: auto !important;
+  right: 25px !important;
+  width: auto !important;
+  max-width: calc(100% - 50px) !important;
+}
+
+@media (max-width: 480px) {
+  [dir="rtl"] .contact-map-card,
+  [dir="rtl"] .anim-radar-map .floating-badge,
+  [dir="rtl"] .anim-radar-map .floating-badge-bottom {
+    left: auto !important;
+    right: 15px !important;
+  }
+}
+
 [dir="rtl"] .review-quote-icon {
   right: auto;
   left: 2.5rem;

@@ -3444,6 +3444,56 @@ img {
   }
 }
 
+/* Contact Page Section 4: Map Floating Pin Card */
+.contact-map-card {
+  position: absolute !important;
+  bottom: 25px !important;
+  left: 25px !important;
+  right: auto !important;
+  top: auto !important;
+  max-width: 360px !important;
+  width: auto !important;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  z-index: 3;
+  box-sizing: border-box;
+  animation: floatUp 4s ease-in-out infinite alternate;
+}
+
+[data-theme="dark"] .contact-map-card {
+  background: rgba(30, 30, 30, 0.94) !important;
+  border-color: rgba(255, 255, 255, 0.12) !important;
+}
+
+[data-theme="dark"] .contact-map-card .badge-text-title {
+  color: #FFF !important;
+}
+
+[dir="rtl"] .contact-map-card,
+[dir="rtl"] .anim-radar-map .floating-badge,
+[dir="rtl"] .anim-radar-map .floating-badge-bottom {
+  left: auto !important;
+  right: 25px !important;
+  width: auto !important;
+  max-width: calc(100% - 50px) !important;
+}
+
+@media (max-width: 480px) {
+  .contact-map-card {
+    bottom: 15px !important;
+    left: 15px !important;
+    right: auto !important;
+    padding: 0.75rem 1rem !important;
+    max-width: calc(100% - 30px) !important;
+  }
+  [dir="rtl"] .contact-map-card,
+  [dir="rtl"] .anim-radar-map .floating-badge,
+  [dir="rtl"] .anim-radar-map .floating-badge-bottom {
+    left: auto !important;
+    right: 15px !important;
+  }
+}
+
 /* LAYOUT 7: Horizontal Timeline Stepper (Home 2 - Secret Recipe) */
 .layout-horizontal-stepper {
   display: grid;
