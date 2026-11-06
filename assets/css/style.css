@@ -923,6 +923,10 @@ img {
   background: var(--primary);
   color: #FFF;
   z-index: 2;
+  white-space: nowrap;
+  max-width: calc(100% - 64px);
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .product-tag.tag-gold,
@@ -3893,6 +3897,22 @@ img {
   z-index: 4;
   transition: all 0.25s ease;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+.deal-card .crave-card-fav {
+  top: 16px;
+  left: 16px;
+  right: auto;
+}
+
+[dir="rtl"] .crave-card-fav {
+  right: auto !important;
+  left: 12px !important;
+}
+
+[dir="rtl"] .deal-card .crave-card-fav {
+  left: auto !important;
+  right: 16px !important;
 }
 
 [data-theme="dark"] .crave-card-fav {

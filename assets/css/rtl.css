@@ -35,13 +35,29 @@
 }
 
 [dir="rtl"] .product-tag {
-  left: auto;
-  right: 12px;
+  left: auto !important;
+  right: 12px !important;
+  white-space: nowrap !important;
+  max-width: calc(100% - 64px) !important;
+  text-overflow: ellipsis !important;
+  overflow: hidden !important;
+  z-index: 2 !important;
+}
+
+[dir="rtl"] .crave-card-fav {
+  right: auto !important;
+  left: 12px !important;
+  z-index: 4 !important;
 }
 
 [dir="rtl"] .deal-discount-pill {
-  right: auto;
-  left: 16px;
+  right: auto !important;
+  left: 16px !important;
+}
+
+[dir="rtl"] .deal-card .crave-card-fav {
+  left: auto !important;
+  right: 16px !important;
 }
 
 [dir="rtl"] .floating-badge-top {
