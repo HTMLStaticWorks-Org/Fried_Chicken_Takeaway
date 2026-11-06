@@ -2126,25 +2126,27 @@ img {
 /* Toast Notification for Cart/Order/Message */
 .crave-toast {
   position: fixed;
-  bottom: 30px;
-  right: 30px;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%) translateY(100px);
   background: #171717;
   color: #FFF;
-  padding: 1rem 1.6rem;
-  border-radius: var(--radius-md);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
-  display: flex;
+  padding: 0.85rem 1.4rem;
+  border-radius: var(--radius-pill);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+  display: inline-flex;
   align-items: center;
   gap: 0.85rem;
-  z-index: 9999;
-  border-left: 5px solid var(--secondary);
-  transform: translateY(100px);
+  font-size: 0.92rem;
+  font-weight: 600;
+  border: 1px solid rgba(255, 179, 0, 0.35);
+  z-index: 1080;
   opacity: 0;
   transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .crave-toast.show {
-  transform: translateY(0);
+  transform: translateX(-50%) translateY(0);
   opacity: 1;
 }
 
@@ -4447,6 +4449,27 @@ img {
   text-transform: uppercase;
   letter-spacing: 0.04em;
   margin-left: 0.5rem;
+}
+
+[dir="rtl"] .crave-toast {
+  left: 50% !important;
+  right: auto !important;
+  transform: translateX(-50%) translateY(100px) !important;
+  border: 1px solid rgba(255, 179, 0, 0.35) !important;
+  border-left: 1px solid rgba(255, 179, 0, 0.35) !important;
+  border-right: 1px solid rgba(255, 179, 0, 0.35) !important;
+  max-width: calc(100% - 32px) !important;
+  width: max-content !important;
+  box-sizing: border-box !important;
+}
+
+[dir="rtl"] .crave-toast.show {
+  transform: translateX(-50%) translateY(0) !important;
+}
+
+[dir="rtl"] .crave-toast-btn {
+  margin-left: 0 !important;
+  margin-right: 0.5rem !important;
 }
 
 @media (max-width: 768px) {

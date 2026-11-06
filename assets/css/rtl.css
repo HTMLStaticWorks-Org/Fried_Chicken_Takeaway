@@ -131,10 +131,24 @@
 }
 
 [dir="rtl"] .crave-toast {
-  right: auto;
-  left: 30px;
-  border-left: none;
-  border-right: 5px solid var(--secondary);
+  left: 50% !important;
+  right: auto !important;
+  transform: translateX(-50%) translateY(100px) !important;
+  border: 1px solid rgba(255, 179, 0, 0.35) !important;
+  border-left: 1px solid rgba(255, 179, 0, 0.35) !important;
+  border-right: 1px solid rgba(255, 179, 0, 0.35) !important;
+  max-width: calc(100% - 32px) !important;
+  width: max-content !important;
+  box-sizing: border-box !important;
+}
+
+[dir="rtl"] .crave-toast.show {
+  transform: translateX(-50%) translateY(0) !important;
+}
+
+[dir="rtl"] .crave-toast-btn {
+  margin-left: 0 !important;
+  margin-right: 0.5rem !important;
 }
 
 [dir="rtl"] .back-to-top {
