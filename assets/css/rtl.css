@@ -34,7 +34,15 @@
   padding-right: 0.5rem;
 }
 
-[dir="rtl"] .product-tag {
+/* Product Tag and Crave Favorite Button Alignment in RTL Mode (Menu, Home, etc.) */
+[dir="rtl"] .product-tag,
+[dir="rtl"] #buckets .product-tag,
+[dir="rtl"] #wings-strips .product-tag,
+[dir="rtl"] #burgers-combos .product-tag,
+[dir="rtl"] .product-card .product-tag,
+[dir="rtl"] .strip-product-card .product-tag,
+[dir="rtl"] .product-img-wrap .product-tag,
+[dir="rtl"] .strip-img-wrap .product-tag {
   left: auto !important;
   right: 12px !important;
   white-space: nowrap !important;
@@ -44,7 +52,14 @@
   z-index: 2 !important;
 }
 
-[dir="rtl"] .crave-card-fav {
+[dir="rtl"] .crave-card-fav,
+[dir="rtl"] #buckets .crave-card-fav,
+[dir="rtl"] #wings-strips .crave-card-fav,
+[dir="rtl"] #burgers-combos .crave-card-fav,
+[dir="rtl"] .product-card .crave-card-fav,
+[dir="rtl"] .strip-product-card .crave-card-fav,
+[dir="rtl"] .product-img-wrap .crave-card-fav,
+[dir="rtl"] .strip-img-wrap .crave-card-fav {
   right: auto !important;
   left: 12px !important;
   z-index: 4 !important;
