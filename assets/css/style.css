@@ -2168,12 +2168,44 @@ img {
 
 /* Inner Page Hero Commons */
 .inner-hero {
-  padding: 5rem 0 4.5rem;
+  padding: 4.5rem 0 4rem;
   background: radial-gradient(circle at 80% 20%, rgba(255, 179, 0, 0.15) 0%, transparent 60%),
               radial-gradient(circle at 10% 80%, rgba(198, 40, 40, 0.1) 0%, transparent 60%);
   text-align: center;
   position: relative;
   border-bottom: 1px solid var(--border-color);
+}
+
+.inner-hero-breadcrumbs {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+  padding: 0.35rem 1.1rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-pill);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.inner-hero-breadcrumbs a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.inner-hero-breadcrumbs a:hover {
+  color: var(--primary-dark);
+  text-decoration: underline;
+}
+
+.inner-hero-breadcrumbs i {
+  font-size: 0.7rem;
+  opacity: 0.6;
 }
 
 .inner-hero-title {
@@ -2182,21 +2214,44 @@ img {
   margin-bottom: 1rem;
 }
 
-.inner-hero-breadcrumbs {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.65rem;
-  font-size: 0.92rem;
-  font-weight: 700;
-  color: var(--text-muted);
+.inner-hero-visual {
+  position: relative;
+  max-width: 980px;
+  margin: 2.25rem auto 0;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+  border: 1px solid var(--border-color);
+  background: var(--bg-card);
 }
 
-.inner-hero-breadcrumbs a {
-  color: var(--primary);
+.inner-hero-img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
 }
 
-.inner-hero-breadcrumbs i {
-  font-size: 0.75rem;
+.inner-hero-visual:hover .inner-hero-img {
+  transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+  .inner-hero {
+    padding: 3.5rem 0 3rem;
+  }
+  .inner-hero-breadcrumbs {
+    font-size: 0.82rem;
+    padding: 0.3rem 0.85rem;
+  }
+  .inner-hero-visual {
+    margin-top: 1.75rem;
+    border-radius: 14px;
+  }
+  .inner-hero-img {
+    height: 220px;
+  }
 }
 
 /* Toast Notification for Cart/Order/Message */
