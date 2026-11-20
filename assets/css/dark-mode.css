@@ -159,6 +159,19 @@
   color: #FFF;
 }
 
+/* Contextual text colors in dark mode */
+[data-theme="dark"] .text-danger {
+  color: #FF5252 !important;
+}
+
+[data-theme="dark"] .text-warning {
+  color: #FFB300 !important;
+}
+
+[data-theme="dark"] .text-success {
+  color: #4CAF50 !important;
+}
+
 [data-theme="dark"] .footer-newsletter-input:focus {
   border-color: var(--secondary);
   background: #222;
