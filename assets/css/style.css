@@ -1129,6 +1129,23 @@ img {
   gap: 2rem;
 }
 
+/* Unrivaled Passion Section (#food-experience): Equal Spacing Between Logo, Heading, and Subtext */
+#food-experience .why-icon-box,
+.experience-grid .why-icon-box {
+  margin: 0 auto 1.15rem !important;
+}
+
+#food-experience .why-card-title,
+.experience-grid .why-card-title {
+  margin-top: 0 !important;
+  margin-bottom: 1.15rem !important;
+}
+
+#food-experience .why-feature-card p,
+.experience-grid .why-feature-card p {
+  margin-bottom: 0 !important;
+}
+
 /* SECTION 4: SIGNATURE COLLECTIONS */
 .signature-grid {
   display: grid;
