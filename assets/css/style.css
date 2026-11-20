@@ -1282,7 +1282,8 @@ img {
   flex: 1 1 auto;
 }
 
-.deal-body .crave-badge {
+.deal-body .crave-badge,
+.ticket-body .crave-badge {
   align-self: flex-start;
   width: fit-content;
   max-width: max-content;
@@ -1290,7 +1291,8 @@ img {
   padding: 0.4rem 1rem !important;
 }
 
-[dir="rtl"] .deal-body .crave-badge {
+[dir="rtl"] .deal-body .crave-badge,
+[dir="rtl"] .ticket-body .crave-badge {
   align-self: flex-start;
   width: fit-content;
   max-width: max-content;
@@ -3473,6 +3475,14 @@ img {
   display: flex;
   flex-direction: column;
   flex: 1 1 auto;
+}
+
+.ticket-body .crave-badge {
+  align-self: flex-start;
+  width: fit-content;
+  max-width: max-content;
+  display: inline-flex;
+  padding: 0.4rem 1rem !important;
 }
 
 /* LAYOUT 5: Editorial Magazine Story Grid (About - Story) */
